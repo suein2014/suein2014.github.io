@@ -1,0 +1,60 @@
+header {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+header h1{
+    margin: 0px;
+    font-size: xx-large;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+
+.photo {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.info {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    font-size: 1.5em;
+
+}
+
+.reason{
+    font-size:1.5em
+}
+
+
+.photo img {
+    float: left;
+    margin: 5px;
+    width: 100%;
+}
+
+
+
+h2{
+    text-align: center;
+}
+
+ul li a{
+    font-size: 1.5em;
+    color: #08c;
+    text-decoration: none;
+}
+
+.tech_name {
+    font-size: 1.5em
+}
+
+
+
+
