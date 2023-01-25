@@ -6,7 +6,7 @@
 
 
 ## Homework Page
-    visit： https://suein2014.github.io/homework1.html
+    [CIS 128 Homework1](./homework1.html)
 
 ## Index Page
     I run `$python httpsever` at local. so this page is for the local.
