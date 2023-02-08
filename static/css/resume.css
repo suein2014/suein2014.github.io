@@ -7,14 +7,19 @@ header {
 header h1{
     margin: 0px;
     font-size: x-large;
+    color: #BAC8A0;
+    text-shadow:0 0 5px black;
 
+}
+
+header button{
+    background-color: blue;
+    font-family: Courier New;
+    color: white;
 }
 
 
 body {
-
-    /*background-image: url('../img/bg.png')*/
-    /*font-family: Sans-serif;*/
     font-family: Courier New;
     font-size: 100%;
     background-color: #5B8982;
@@ -30,16 +35,18 @@ body {
     }
 }
 
-.wrapper {
+.intrdouce_myself {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    column-gap: 20px;
+    row-gap:10px;
 
 }
 
-.photo {
+figure {
     grid-column: 1 / 2;
     grid-row: 1;
+    margin-inline-start: 10px;
 }
 
 .info {
@@ -50,7 +57,6 @@ body {
 }
 
 .info p{
-    /*color: #236B8E;*/
     color: white; /*color: #FFFFFF;*/
 }
 
@@ -63,18 +69,12 @@ body {
 }
 
 
-.photo img {
-    padding-top: 4%;
-    margin: 5px;
-    width: 100%;
-    align-items: center;
-}
+figure > img {
+    /*padding-top: 4%;
+    margin: 15px;*/
+    margin-right: 15px;
+    width: 116%;
 
-
-
-
-h1 {
-    color: #BAC8A0;
 }
 
 
@@ -83,15 +83,18 @@ h2 {
 }
 
 h2 span{
-    background-color:  #BAC8A0;
+    /*background-color:  #BAC8A0;*/
     opacity: 0.8;
-    color: white;
+    color: #BAC8A0;/*white;*/
     font-weight:bold;
+    text-shadow:0 0 5px black;
 }
 
 .tech h2, .resources h2 {
     text-align: center;
 }
+}
+
 
 
 .tech_name {

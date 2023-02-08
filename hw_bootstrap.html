@@ -7,9 +7,14 @@
         <meta name="description" content="Build a modern and beautiful resume is the first step to get your job.
         CIS-128 @CSM is the very course to help you complete this.">
 
+
+<!--        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+        <link href="./static/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="./static/css/resume.css" rel="stylesheet">
         <script src="./static/js/jquery_3_6_1_min.js"></script>
         <script src="./static/js/resume.js"></script>
+        <script src="./static/js/bootstrap/bootstrap.min.js"></script>
+<!--        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>-->
 
 
     </head>
@@ -17,16 +22,22 @@
     <body>
       <header>
           <h1>Learning CIS-128 @CSM: Mobile web app development </h1>
-          <button>Start animation</button>
+          <button type="button" class="btn btn-warning">Start animation</button>
+<!--          <button>Start animation</button>-->
       </header>
 
       <main>
-        <div class="intrdouce_myself">
-            <figure>
+<!--        <div class="intrdouce_myself">-->
+        <div class="container">
+          <div class="row">
+             <div class="col-md-4">
+              <figure>
                  <img src="./static/img/my_photo.jpg" alt="Xiaoyan Tian's Photo at CSM">
-            </figure>
-            <section class="info">
-                <h2> <span>&nbsp;About Me </span></h2>
+              </figure>
+             </div>
+             <div class="col-md-8">
+              <section class="info">
+                <h2> <span>About Me </span></h2>
                 <p>
                     My name is Xiaoyan Tian.
                     <br> <br>
@@ -43,30 +54,36 @@
                     it's not systematically at all.
                     <br><br>
                 </p>
-            </section>
-        </div>
+             </section>
+             </div>
+          </div>
 
-        <div class="reason">
+
+          <div class="row">
+           <div class="reason">
           <p>
             The Reason why I take this class is, I hope to pick up my work again,
             so I applied a certification of Applied Python Programming at CSM last
             year. I am also interested in front-end skills very much, so I take this
               class.
           </p>
-        </div>
-        <br>
+         </div>
+          </div>
 
-        <section class="tech">
+          <div class="row">
+           <section class="tech">
             <h2><span>Technologies for this Class</span></h2>
             <ul class="tech_name">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Javascript</li>
             </ul>
-        </section>
+         </section>
+          </div>
 
-        <section class="resources">
-            <h2><span>Resources</span></h2>
+          <div class="row">
+           <section class="resources">
+            <h2 ><span>Resources</span></h2>
             <ul>
                 <li>
                     <p>
@@ -103,7 +120,9 @@
                     </p>
                 </li>
             </ul>
-        </section>
+         </section>
+          </div>
+       </div>
       </main>
 
 
