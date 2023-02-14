@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var $header_btn = $("header h1"),original_btn_styles;
+    var $header_btn = $("header h1");
     delaytime = 1000,
     original_btn_styles= $header_btn.css(['font-size','color']);
 
