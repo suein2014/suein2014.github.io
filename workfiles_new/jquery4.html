@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>setTimeout method</title>
+<meta charset="utf-8">
+<meta name="description" content="using setTimeout() method in jQuery to delay a function from starting">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h2").css("color", "blue");
+    $("h2").animate({"font-size": "+=1rem"}, 3000);
+    $("p").css({"background-color": "yellow", "color": "red"});
+    $("h2").animate({"font-size": "-=1rem"}, 3000);
+    $("h2").css("color", "black");
+    //var timer = setTimeout(function() {$("h2").css("color", "black")}, 5000);
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>This is the heading h2</h2>
+
+<p style="background-color:#ff0000">This is a paragraph starting with red background color.</p>
+<p style="background-color:#00ff00">This is a paragraph starting with green background color.</p>
+<p style="background-color:#0000ff">This is a paragraph starting with blue background color.</p>
+
+<p>This is a paragraph that starts with the default background color.</p>
+
+<button>Start the action</button>
+
+</body>
+</html>

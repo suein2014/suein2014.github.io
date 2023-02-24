@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Responsive with CSS Variables</title>
+<meta name="description" content="Applying RWD using CSS variables">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root {
+    --red: #ff0000;
+    --bg: #fff8de;
+    --yellow: #e5b752;  
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+	background: var(--bg);
+	color: var(--red);
+}
+
+#navbar a {
+    color: var(--red);
+}
+
+.item {
+    background: var(--yellow);
+}
+
+button {
+    background: var(--red);
+    color: var(--yellow);
+}
+
+h1, p {
+    color: var(--red);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+#navbar {
+    font-size: 24px;
+}
+
+a {
+    font-size: 28px;
+}
+
+
+.grid {
+    display: grid;
+    grid-auto-rows: 140px;
+    grid-gap: 20px;
+    justify-content: center; 
+}
+
+
+#navbar > ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    margin: 0px auto;
+    display: block;
+    padding: 5px 10px;
+    border: none;
+	border-radius: 5px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	padding: 5px;
+}
+
+/* Variable declarations */
+:root {
+    --base-font-size: 30px;
+    --columns: 200px 200px;
+    --base-margin: 30px;
+	--base-padding: 20px;
+}
+
+/* Styles */
+#navbar {
+    margin: var(--base-margin) 0;
+	padding: 0 var(--base-padding);
+}
+
+#navbar a {
+    font-size: var(--base-font-size);
+}
+
+h1 {
+    font-size: var(--base-font-size);
+}
+
+
+.grid {
+    margin: var(--base-margin) 0;
+    grid-template-columns: var(--columns);
+}
+
+
+
+
+
+
+
+/*
+Non Variables style:
+h1 {
+    font-size: 30px;
+}
+
+#navbar {
+    margin: 30px 0;
+}
+
+#navbar a {
+    font-size: 30px;
+}
+
+.grid {
+    margin: 30px 0;
+    grid-template-columns: 200px 200px;
+}
+
+
+
+*/
+
+
+@media all and (max-width: 450px) {
+    :root {
+        --columns: 200px;
+        --base-margin: 15px;
+        --base-font-size: 20px;
+		--base-padding: 2px;
+    }
+}
+</style>
+</head>
+    <body>
+        <header>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>my awesome portfolio</h1>
+                <div class="grid">
+                    <div class="item">
+                        <h1>project a</h1>
+                        <button>learn more</button>
+                    </div>
+                    <div class="item">
+                        <h1>project b</h1>
+                        <button>learn more</button>
+                    </div>
+                    <div class="item">
+                        <h1>project c</h1>
+                        <button>learn more</button>
+                    </div>
+                    <div class="item">
+                        <h1>project d</h1>
+                        <button>learn more</button>
+                    </div>
+            </div>
+        </main>
+    </body>
+</html>

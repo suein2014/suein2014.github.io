@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="using ~ in CSS">
+<title>Input Number</title>
+    <style>
+        label { vertical-align: top; }
+        
+        form { width: 85%; min-width:300px; margin:0 auto; padding: 10px; }
+        
+        .borderform { border: 2px solid red; }
+        
+        .mytarget { float: left; width: 150px; height: 50px; margin: 15px; padding: 10px; border: 1px solid green; }
+        
+        #msg { clear:both; color:red; font-weight:bold;}
+    </style>
+    <script>
+      function Resizing() {
+          var x = document.getElementById("myform");
+          x.classList.add("borderform");
+      }
+        
+      function dragStart(event) {
+          event.dataTransfer.setData("Text", event.target.id);
+      }
+
+      function dragging(event) {
+          document.getElementById("msg").innerHTML = "You are dragging the element now!";
+      }
+
+      function allowDrop(event) {
+          event.preventDefault();
+      }
+
+      function drop(event) {
+          event.preventDefault();
+          var data = event.dataTransfer.getData("Text");
+          event.target.appendChild(document.getElementById(data));
+          document.getElementById("msg").innerHTML = "The element has been dropped!";
+      }    
+    </script>
+
+    </head>
+    <body onresize="Resizing()">
+<form id="myform" method="get" action="#">
+ <label for="mytest">Comments</label> <textarea name="test" id="mytest" cols="40" rows="3" spellcheck="true"></textarea><br><br>
+    <label for="mytest1">Comments</label> <textarea name="test1" id="mytest1" cols="40" rows="3" spellcheck="false"></textarea><br>
+ <input type="submit" value="Submit">&nbsp;&nbsp;<input type="reset" value="Clear Textareas">
+</form>
+        <p>Here below you can see the dragging element working</p>
+        <p>Drag the p element back and forth between the two rectangles:</p>
+
+<div class="mytarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragelement">You can drag me!</p>
+</div>
+
+<div class="mytarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        
+        <p id="msg"></p>
+    </body>
+</html>

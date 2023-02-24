@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Semantic UI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="using Semantic UI">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+<!--  <link rel="stylesheet" href="Semantic-UI-master/dist/semantic.min.css"> -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+<!--  <script src="Semantic-UI-CSS-master/semantic.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.js"></script>
+  <script>
+             $(document).ready(function(){
+                $('.ui.accordion').accordion();
+             });
+  </script>
+</head>
+<body>
+<h1 class="ui center aligned header">Collapsile - Accordion</h1>
+<div class="ui styled accordion">
+  <div class="title">
+    <i class="dropdown icon"></i>
+    Introduction to HTML &amp; CSS
+  </div>
+  <div class="content">
+    <p>This is a short-term introductory course to the basics of HTML and inline CSS.</p>
+	<p>It is an online course and it is a 6-week long course.</p>
+  </div>
+  <div class="title">
+    <i class="plus icon"></i>
+    JavaScript, jQuery, AJAX
+  </div>
+  <div class="content">
+    <p>This is a semester-long course to teach the basics of JavaScript, jQuery, and AJAX.</p>
+	<p>You will learn how to work with some ready-to-use jQuery API's, as well with the basic differences between JavaScript and EcmaScript</p>
+  </div>
+</div>
+</body>
+</html>

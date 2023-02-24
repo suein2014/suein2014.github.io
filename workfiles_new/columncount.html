@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>column count</title>
+<meta charset="utf-8">
+<meta name="description" content="using column-count CSS property">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.journal {
+  column-count: 5;
+  -webkit-column-count: 5;
+  -moz-column-count: 5;
+}
+</style>
+</head>
+<body>
+<h1>Dividing text into columns</h1>
+<div class="journal">
+This div will have the text divided into 5 columns because of the journal class that is being used. It is interesting to notice the use of the column-count CSS property and the use of the vendor prefixes to make sure it will work in all browsers. The column-count still requires those vendor prefixes according to <a href="https://caniuse.com/#search=column-count" target="_blank" rel="noopener">Caniuse.com website</a>. In the future, you might be able to use this CSS property without prefix. If we do not have a big text, in the desktop/laptop, this text will be presenting only 4 columns but in the mobile devices, this text will be shown divided into 5 columns.
+</div>
+</body>
+</html>
