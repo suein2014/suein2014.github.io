@@ -17,22 +17,22 @@
         line-height:2.1rem; /* line height sets the vertical spacing between lines of text. */
     }
 
-/*
+    /*
     @media screen and (max-width:600px){
         header, footer, main, nav, section, article, aside{width:100%; padding:5px; box-sizing:border-box;}
         nav,ul, li {width:100%, text-align:center;line-height:2rem; height:2rem;}
     }
-*/
+    */
 
-   /* @media screen and (min-width:601px){
+    /* @media screen and (min-width:601px){
         header, footer, main {min-width:700px; width:860px; margin:auto; border:1px solid;}
         header, footer, main { padding:10px;}
         section{ margin-left:200px;}
         section ul {padding:20px;}
     }
-*/
+    */
 
-/*
+    /*
     @media (max-width: 600px) {
       aside {
         display: block;
@@ -49,7 +49,7 @@
         vertical-align: top;
       }
     }
-*/
+    */
 
 
 
@@ -87,7 +87,7 @@
     nav ul li{
         display:inline-block; /* an inline block element can have width and height applied to it / and if not, they only take up as much space as the content within allows */
         margin:0 0.23em 0.39em;    /* this code adds a 3px margin to the left and right of the list elements, and 5px to the bottom of the list elements */
-   }
+    }
 
     nav ul li a{
         background:#4a4a4a;    /* this is a dark grey background for the link */
@@ -193,10 +193,12 @@
     }
 
 
-
-
-
-
+    .animation {
+        position: relative;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
 
     footer{
         background-color:#c4d5d9;
@@ -207,12 +209,41 @@
 
 
 
-     .animation {
-        position: relative;
-        animation-name: move;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
+    /*show img for laptop/desktop */
+    @media only screen and  (min-width: 768px) {
+        header {
+            background-image: url(images/headerbkgd.png); /*we can put larger size img here.*/
+        }
     }
+
+    /*show img for non-laptop device: tablet, big phone,  small phone */
+    @media only screen and (max-width: 769px) {
+        header {
+            background-image: url(images/headerbkgd.png); /*we can put small size img here.*/
+        }
+    }
+
+
+     @media only screen and (max-width: 600px) {
+        .animation {
+            display: none;
+        }
+
+
+        .sidebar-left{
+            grid-column: 1 / 5;
+            padding-left: 1rem;
+            padding-right: 1.5rem
+        }
+
+        .col-right{
+            grid-column: 1 / 5;
+            grid-row:4;
+            padding-left: 1.5rem;
+        }
+    }
+
+
 
     @keyframes move {
         0% {
@@ -226,42 +257,7 @@
         }
     }
 
-
-    @media (max-width: 600px) {
-        .animation {
-            display: none;
-        }
-
-
-        .content {
-            display: grid;
-            grid-template-columns: 1fr;
-            row-gap:0.77rem;
-            margin:1.5rem auto;
-        }
-    }
-
-
-
-
-
-    /*show right img for laptop/desktop */
-    @media (min-width: 992px) {
-        header {
-            background-image: url(images/headerbkgd.png);
-        }
-    }
-
-    /*show img for non-laptop device: tablet, big phone,  small phone */
-    @media (max-width: 992px) {
-        header {
-            background-image: url(images/headerbkgd.png);
-        }
-    }
-
-
-
-    @media only screen and (min-width: 601px) {
+    @media  only screen and (min-width: 601px) {
         body {
             margin-left: 19.4%;
             margin-right:19.4%;
