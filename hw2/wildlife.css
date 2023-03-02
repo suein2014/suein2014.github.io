@@ -194,6 +194,7 @@
         }
     }
 
+    /* CSS3 animation */
     @keyframes move {
         0% {
             top: 0;
@@ -214,16 +215,19 @@
         }
     }
 
+
    @media (hover: hover) {
         /* when hover is supported */
         a:hover {
-            text-decoration:none;  /* when hovering over a link, in the sidebar, this turns off the underline */
+            background: #B2FF66;
+            text-decoration: none;  /* when hovering over a link, in the sidebar, this turns off the underline */
         }
    }
 
    @media (hover: none) {
       /* when hover is not supported */
       a:hover {
+        background: #9999FF;
         text-decoration: underline;
      }
    }
