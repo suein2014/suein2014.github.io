@@ -3,7 +3,7 @@
     }
 
     html{
-        font-size: 62.5%;
+        font-size: 62.5%;  /* let 1rem = 10px */
     }
 
     body{
@@ -17,14 +17,44 @@
         line-height:2.1rem; /* line height sets the vertical spacing between lines of text. */
     }
 
-
-    /* set margin only for device larger than mobile */
-    @media only screen and (min-width: 768px) {
-        body {
-            margin-left: 19.36%;
-            margin-right:19.36%;
-        }
+/*
+    @media screen and (max-width:600px){
+        header, footer, main, nav, section, article, aside{width:100%; padding:5px; box-sizing:border-box;}
+        nav,ul, li {width:100%, text-align:center;line-height:2rem; height:2rem;}
     }
+*/
+
+   /* @media screen and (min-width:601px){
+        header, footer, main {min-width:700px; width:860px; margin:auto; border:1px solid;}
+        header, footer, main { padding:10px;}
+        section{ margin-left:200px;}
+        section ul {padding:20px;}
+    }
+*/
+
+/*
+    @media (max-width: 600px) {
+      aside {
+        display: block;
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+
+    @media (min-width: 601px) {
+      aside {
+        display: inline-block;
+        width: 30%;
+        margin: 20px 0;
+        vertical-align: top;
+      }
+    }
+*/
+
+
+
+
+
 
 
     header {
@@ -46,22 +76,6 @@
         min-height:10em;    /* setting a minimum height of an element means that it can grow to be bigger, if there is a lot of content in it. However, if it doesn't have enough content, it will be at the very least (in this example) 130 pixels tall */
         padding:3.46em 1.15em 1.15em;    /* by setting a padding, the content within a HTML element will not touch the edges of that element (by adding padding to an element, it actually makes that element appear wider and/or taller.  In this case, the header div is now 15px wider and taller on each side. */
 
-    }
-
-
-
-
-
-
-
-    @media (min-width: 1025px) {
-        header {
-            background-image: url(images/headerbkgd.png);
-        }
-    }
-
-    header {
-        width:87rem;
     }
 
 
@@ -97,8 +111,7 @@
 
     .content {
         display: grid;
-        grid-template-columns: 22rem repeat(3, 1fr);
-        /*column-gap: 1.54rem;*/
+        grid-template-columns: repeat(4, 1fr);
         row-gap:0.77rem;
         margin:1.5rem auto;
 
@@ -106,7 +119,9 @@
 
     .sidebar-left{
         grid-column: 1 / 2;
-        padding:0 1rem;
+        padding-left: 1rem;
+        padding-right: 1.5rem
+
     }
 
     .favorite {
@@ -122,16 +137,10 @@
     }    /* when hovering over a link, in the sidebar, this turns off the underline */
 
 
-    .news {
-        /*grid-row: 2 / 4;*/
-    }
-
-
 
     .col-right{
         grid-column: 2 / 5;
-        /*grid-row: 1 / 3;*/
-        padding-left: 2rem;
+        padding-left: 1.5rem;
     }
 
     .article_1 h1 {
@@ -140,11 +149,9 @@
 
 
     .article_2 {
-        display: grid;
-        grid-template-columns: 21rem 2fr;
+        display: inline-grid;
+        grid-template-columns: 2fr;
         font-size: 0;
-        /*row-gap: 1.5rem;*/
-        /*column-gap:0.01rem;*/
     }
 
     .article_2 h3{
@@ -165,14 +172,15 @@
     }
 
     .article_3 p{
-        width:66rem;
+        font-size: 1.3rem;
+        grid-column:2;
     }
 
 
 
 
     .list{
-        border-bottom: 0.08rem solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
+        border-bottom: 0.13rem solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
         padding:0 0 2rem 1.5rem;    /* adds spacing to the bottom of the list to further divide the content for eaier segragation */
     }
     .list li{
@@ -187,10 +195,75 @@
 
 
 
+
+
+
     footer{
         background-color:#c4d5d9;
         margin:0 auto;
         padding:1.5rem;
         text-align:center;
-        width:90rem;
+    }
+
+
+
+     .animation {
+        position: relative;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes move {
+        0% {
+            top: 0;
+        }
+        50% {
+            top: 20px;
+        }
+        100% {
+            top: 0;
+        }
+    }
+
+
+    @media (max-width: 600px) {
+        .animation {
+            display: none;
+        }
+
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap:0.77rem;
+            margin:1.5rem auto;
+        }
+    }
+
+
+
+
+
+    /*show right img for laptop/desktop */
+    @media (min-width: 992px) {
+        header {
+            background-image: url(images/headerbkgd.png);
+        }
+    }
+
+    /*show img for non-laptop device: tablet, big phone,  small phone */
+    @media (max-width: 992px) {
+        header {
+            background-image: url(images/headerbkgd.png);
+        }
+    }
+
+
+
+    @media only screen and (min-width: 601px) {
+        body {
+            margin-left: 19.4%;
+            margin-right:19.4%;
+        }
     }
