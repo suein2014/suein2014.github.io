@@ -17,46 +17,6 @@
         line-height:2.1rem; /* line height sets the vertical spacing between lines of text. */
     }
 
-    /*
-    @media screen and (max-width:600px){
-        header, footer, main, nav, section, article, aside{width:100%; padding:5px; box-sizing:border-box;}
-        nav,ul, li {width:100%, text-align:center;line-height:2rem; height:2rem;}
-    }
-    */
-
-    /* @media screen and (min-width:601px){
-        header, footer, main {min-width:700px; width:860px; margin:auto; border:1px solid;}
-        header, footer, main { padding:10px;}
-        section{ margin-left:200px;}
-        section ul {padding:20px;}
-    }
-    */
-
-    /*
-    @media (max-width: 600px) {
-      aside {
-        display: block;
-        width: 100%;
-        margin: 20px 0;
-      }
-    }
-
-    @media (min-width: 601px) {
-      aside {
-        display: inline-block;
-        width: 30%;
-        margin: 20px 0;
-        vertical-align: top;
-      }
-    }
-    */
-
-
-
-
-
-
-
     header {
         background-color:#333; /* a more specific way to set a background color */
         background-size:auto;
@@ -108,7 +68,6 @@
 
 
 
-
     .content {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -138,6 +97,7 @@
 
 
 
+
     .col-right{
         grid-column: 2 / 5;
         padding-left: 1.5rem;
@@ -146,7 +106,6 @@
     .article_1 h2 {
          font-size:2.6rem;
     }
-
 
     .article_2 {
         display: inline-grid;
@@ -177,8 +136,6 @@
     }
 
 
-
-
     .list{
         border-bottom: 0.13rem solid #c3dce1; /* adds a border to the bottom of the list to further divide the content for eaier segragation */
         padding:0 0 2rem 1.5rem;    /* adds spacing to the bottom of the list to further divide the content for eaier segragation */
@@ -200,6 +157,7 @@
         animation-iteration-count: infinite;
     }
 
+
     footer{
         background-color:#c4d5d9;
         margin:0 auto;
@@ -209,14 +167,14 @@
 
 
 
-    /*show img for laptop/desktop */
+    /* show img for laptop/desktop */
     @media only screen and  (min-width: 768px) {
         header {
             background-image: url(images/headerbkgd.png); /*we can put larger size img here.*/
         }
     }
 
-    /*show img for non-laptop device: tablet, big phone,  small phone */
+    /* show img for non-laptop device: tablet, big phone,  small phone */
     @media only screen and (max-width: 769px) {
         header {
             background-image: url(images/headerbkgd.png); /*we can put small size img here.*/
@@ -243,8 +201,6 @@
         }
     }
 
-
-
     @keyframes move {
         0% {
             top: 0;
@@ -257,6 +213,7 @@
         }
     }
 
+    /*set margin for screen larger than small phone*/
     @media  only screen and (min-width: 601px) {
         body {
             margin-left: 19.4%;
