@@ -161,60 +161,6 @@
 
 
 
-    /* show img for laptop/desktop */
-    @media only screen and  (min-width: 768px) {
-        header {
-            background-image: url(images/headerbkgd.png); /*we can put larger size img here.*/
-        }
-    }
-
-    /* show img for non-laptop device: tablet, big phone,  small phone */
-    @media only screen and (max-width: 769px) {
-        header {
-            background-image: url(images/headerbkgd.png); /*we can put small size img here.*/
-        }
-    }
-
-
-     @media only screen and (max-width: 600px) {
-        .animation {
-            display: none; /* hiding footer, not showing css3 animation on small phone */
-        }
-
-
-        .sidebar-left{
-            grid-column: 1 / 5;
-            padding-left: 1rem;
-            padding-right: 1.5rem
-        }
-
-        .col-right{
-            grid-column: 1 / 5;
-            grid-row:4;
-            padding-left: 1.5rem;
-            padding-right:1.5rem;
-        }
-
-
-        .article_2 figure{
-            grid-column:1 / 5;
-            grid-row: 2 / 3;
-            margin-bottom: 1rem;
-            margin-right: 1rem;
-        }
-        .article_2 p{
-            grid-column:1 / 5;
-            font-size: 1.3rem;
-        }
-
-        .article_3 h3{
-            padding-top: 1.6rem;
-            font-size: 1.52rem;
-            margin-bottom: 1.5rem;
-        }
-
-    }
-
     /* CSS3 animation */
     @keyframes move {
         0% {
@@ -229,14 +175,6 @@
     }
     
 
-    /*set margin for screen larger than small phone*/
-    @media  only screen and (min-width: 601px) {
-        body {
-            margin-left: 19.4%;
-            margin-right:19.4%;
-        }
-    }
-
 
    @media (hover: hover) and (pointer: fine) {
         /* when hover is supported  and the cursor is pointer*/
@@ -245,7 +183,6 @@
             text-decoration: none;  /* when hovering over a link, in the sidebar, this turns off the underline */
         }
    }
-
 
 
 
