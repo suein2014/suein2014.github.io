@@ -13,6 +13,7 @@
             <h1>Welcome to Wildlife for Life</h1>
             <h2>We fight for life</h2>
             <nav>
+                <h2 class="hidden"> -Navigation- </h2>
                 <ul>
                     <li><a href="index.html" title="home">Home</a></li>
                     <li><a href="#" title="contact">Contact Us</a></li>
@@ -21,6 +22,7 @@
         </header>
         <main class="content">
             <aside class="sidebar-left">
+                <h2 class="hidden"> -Sidebar- </h2>
                 <section class="favorite">
                     <h3>Favorite links</h3>
                     <ul class="list">
@@ -36,7 +38,8 @@
                 </section>
             </aside>
 
-            <div class="col-right">
+            <article class="col-right">
+                <h2 class="hidden"> -Article Content- </h2>
                 <article class="article_1">
                     <h2>The Wild Life is great</h2><br>
                     <p>Wild Life includes all non-domesticated plants, animals and other organisms.</p>
@@ -46,7 +49,11 @@
                 <article class="article_2">
                     <h3>Destruction</h3><br>
                     <figure>
-                        <img src="images/img1.jpg" class="article_2_img" alt="alternative text.  This text is for screen readers or in the instance an image can't load, a description of what should have been here." >
+                        <img srcset="images/img1_160.jpg 160w, images/img1.jpg 200w images/img1_320.jpg 320w"
+                              sizes="(max-width: 600px) 80vw, (max-width: 768px) 33vw, 12.5rem"
+                                 src="images/img1.jpg"
+                             alt="alternative text.  This text is for screen readers or in the instance an image can't load, a description of what should have been here." >
+
                     </figure>
                     <p>Exploitation of wild populations has been a characteristic of modern man since our exodus from Africa 130,000 – 70,000 years ago. The rate of extinctions of entire species of plants and animals across the planet has been so high in the last few hundred years it is widely believed that we are in the sixth great extinction event on this planet</p><br>
 
@@ -56,7 +63,7 @@
                     <h3 class="clear">Food, pets, and traditional medicines</h3><br>
                     <p>Anthropologists believe that the Stone Age people and hunter-gatherers relied on wildlife, both plants and animals, for their food. In fact, some species may have been hunted to extinction by early human hunters.</p>
                 </article>
-            </div>
+            </article>
         </main>
 
         <footer class="animation">

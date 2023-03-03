@@ -65,7 +65,9 @@
 
     }
 
-
+    .hidden{
+        display:none; /* hiding headers for html5 outline*/
+    }
 
 
     .content {
@@ -190,6 +192,7 @@
             grid-column: 1 / 5;
             grid-row:4;
             padding-left: 1.5rem;
+            padding-right:1.5rem;
         }
 
 
