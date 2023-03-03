@@ -243,6 +243,9 @@
         }
    }
 
+
+
+
    @media (hover: none) {
       /* when hover is not supported */
       a:hover {
