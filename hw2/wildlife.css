@@ -144,14 +144,6 @@
     }
 
 
-    .animation {
-        position: relative;
-        animation-name: move;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-    }
-
-
     footer{
         background-color:#c4d5d9;
         margin:0 auto;
@@ -162,6 +154,13 @@
 
 
     /* CSS3 animation */
+    .animation {
+        position: relative;
+        animation-name: move;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
     @keyframes move {
         0% {
             top: 0;
