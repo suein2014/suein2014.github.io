@@ -5,5 +5,5 @@ $(document).ready(function(){
 
     $('.ui.sidebar').sidebar({
       context: $('.bottom.attached.segment')
-    }).sidebar('attach events', '.dropdown.item');
+    }).sidebar('attach events', '.sidebar.item');
 })

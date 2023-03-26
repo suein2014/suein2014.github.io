@@ -4,9 +4,12 @@
         <meta charset="UTF-8" />
         <title>ABC Toys</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link href="./static/css/semantic.min.css" rel="stylesheet">
-        <link href="./static/fontawesome/all.css" rel="stylesheet">
+<!--        <link href="./static/css/semantic.min.css" rel="stylesheet">-->
+<!--        <link href="./static/fontawesome/all.css" rel="stylesheet">-->
+        <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css" rel="stylesheet">
+<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
         <link href="./static/css/hw3_semantic.css" rel="stylesheet" media="all">
+
 
     </head>
     <body>
@@ -226,17 +229,24 @@
 
         <article class="mobile only row">
             <div class = "ui top attached menu">
-                <a class = "ui dropdown item">
-                    Menu <i class="dropdown icon"></i>
-                </a>
+                  <a class="sidebar item">
+                      <i class="sidebar icon"></i>
+                      Menu
+                  </a>
             </div>
             <div class = "ui bottom attached segment">
-                <div class = "ui thin left inverted inline vertical sidebar menu">
-                    <a class="active item" data-tab="home-page">Home</a>
-                    <a class="item" data-tab="products-page">Products</a>
-                    <a class="item" data-tab="location-page">Location</a>
-                    <a class="item" data-tab="extra-page">Extra</a>
-                    <a class="item" data-tab="contact-page">Contact</a>
+                <div class = "ui thin labeled icon left inverted inline vertical sidebar menu">
+                    <a class="active item" data-tab="home-page">
+                        <i class="home icon"></i>Home
+                    </a>
+                    <a class="item" data-tab="products-page">
+                        <i class="product hunt icon"></i>Products</a>
+                    <a class="item" data-tab="location-page">
+                        <i class="location arrow icon"></i>Location</a>
+                    <a class="item" data-tab="extra-page">
+                        <i class="info icon"></i>Extra</a>
+                    <a class="item" data-tab="contact-page">
+                        <i class="phone icon"></i>Contact</a>
                     <div class="ui hidden section divider"></div>
                 </div>
                 <div class="pusher">
