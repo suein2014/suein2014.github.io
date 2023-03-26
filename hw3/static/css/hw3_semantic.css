@@ -13,7 +13,7 @@
 
     .ui > .row h3.header {
         margin-bottom: 0;
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
 
     .ui > .row .ui.item.menu {
@@ -42,6 +42,11 @@
 
     .ui > .three.column.row h1 {
         font-size: 2.14rem;
+    }
+
+
+    .ui.bottom.attached.segment {
+        min-height: 100vh;
     }
 
     footer {

@@ -1,65 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>ABC Toys</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="./static/css/semantic.min.css" rel="stylesheet">
+        <link href="./static/fontawesome/all.css" rel="stylesheet">
+        <link href="./static/css/hw3_semantic.css" rel="stylesheet" media="all">
 
-  <meta charset="UTF-8" />
+    </head>
+    <body>
+            <header >
+               <div class="ui grid">
+<!--                <nav class="computer only row">-->
+<!--                    <div class="ui five item fixed stackable tabular huge menu">-->
+<!--                      <a class="active item" data-tab="home-page">Home</a>-->
+<!--                      <a class="item" data-tab="products-page">Products</a>-->
+<!--                      <a class="item" data-tab="location-page">Location</a>-->
+<!--                      <a class="item" data-tab="extra-page">Extra</a>-->
+<!--                      <a class="item" data-tab="contact-page">Contact</a>-->
+<!--                    </div>-->
+<!--                    <div class="ui hidden section divider"></div>-->
+<!--                </nav>-->
+                <nav class="computer only row">
+                    <div class = "ui attached menu">
+                        <a class = "ui dropdown item">
+                            Menu <i class="dropdown icon"></i>
+                        </a>
+                    </div>
+                    <div class = "ui bottom attached segment">
+                        <div class = "ui thin left inverted vertical sidebar menu">
+                            <a class="active item" data-tab="home-page">Home</a>
+                            <a class="item" data-tab="products-page">Products</a>
+                            <a class="item" data-tab="location-page">Location</a>
+                            <a class="item" data-tab="extra-page">Extra</a>
+                            <a class="item" data-tab="contact-page">Contact</a>
+                            <div class="ui hidden section divider"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
 
-  <title>ABC Toys</title>
+        </header>
+        <div class="pusher">
+            <main class="ui container">
+            <article class="row">
+                <h3 class="ui large header">ABC Toys</h3>
+                    <a class="active item" data-tab="home-page">Home</a>
+                    <a class="item" data-tab="products-page">Products</a>
+                    <a class="item" data-tab="location-page">Location</a>
+                    <a class="item" data-tab="extra-page">Extra</a>
+                    <a class="item" data-tab="contact-page">Contact</a>
+            </article>
 
-  <link href="./static/css/semantic.min.css" rel="stylesheet" type="text/css">
-    <script src="./static/js/jquery_3_6_1_min.js"></script>
-  <script src="./static/js/semantic.min.js"></script>
-  <script src="./static/js/hw3.js"></script>
-
-</head>
-
-
-<body>
-
-
-
-      <!-- Toy #1 -->
-      <div class="ui styled accordion">
-        <div class="title">
-          <i class="dropdown icon"></i>
-          LEGO Creator Expert Taj Mahal
+            <footer class="row">
+                <div class="column">
+                  <div class="ui divider"></div>
+                  <footer>&copy; 2023 Company, Inc.</footer>
+                </div>
+            </footer>
+          </main>
         </div>
-        <div class="content">
-          <p>
-            The LEGO Creator Expert Taj Mahal is a highly detailed set that consists of over 5,900 pieces, making it one of the largest LEGO sets ever made. The set includes intricate architectural details such as minarets, domes, and arches, and comes with a display stand so you can show off your creation. It is recommended for ages 16 and up.
-          </p>
-          <img src="https://images-na.ssl-images-amazon.com/images/I/81uPO7VUWFL._AC_SL1500_.jpg" alt="LEGO Taj Mahal">
-        </div>
-      </div>
-      <!-- Toy #2 -->
-      <div class="ui styled accordion">
-        <div class="title">
-          <i class="dropdown icon"></i>
-          Barbie Dreamhouse
-        </div>
-        <div class="content">
-          <p>
-            The Barbie Dreamhouse is a classic toy that has been updated for modern times. This three-story house has seven rooms, including a kitchen, living room, and bedroom, as well as a working elevator and a pool with a slide. It also features interactive lights, sounds, and motion-activated appliances. The set comes with over 70 accessories and is recommended for ages 3 and up.
-          </p>
-          <img src="https://images-na.ssl-images-amazon.com/images/I/81JY-pYbB-L._AC_SL1500_.jpg" alt="Barbie Dreamhouse">
-        </div>
-      </div>
-      <!-- Toy #3 -->
-      <div class="ui styled accordion">
-        <div class="title">
-          <i class="dropdown icon"></i>
-          Razor A Kick Scooter
-        </div>
-        <div class="content">
-          <p>
-            The Razor A Kick Scooter is a classic toy that has been a favorite of kids and adults for over 20 years. It features a sturdy aluminum frame, 98mm inline-style wheels, and a rear fender brake. It is recommended for ages 5 and up and can support riders up to 143 pounds.
-          </p>
-          <img src="https://images-na.ssl-images-amazon.com/images/I/71AL5v5F5aL._AC_SL1500_.jpg" alt="Razor A Kick Scooter">
-        </div>
-      </div>
-      <!-- Initialize Accordion -->
-      <script>
-      $('.ui.accordion').accordion();
-      </script>
-</body>
+
+        <script src="./static/js/jquery_3_6_1_min.js"></script>
+        <script src="./static/js/semantic.min.js"></script>
+        <script src="./static/js/hw3.js"></script>
+        <script>
+            $('.ui.accordion').accordion();
+        </script>
+    </body>
+
 </html>
