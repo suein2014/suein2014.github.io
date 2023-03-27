@@ -5,20 +5,26 @@
         <title>ABC Toys</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
         <link href="./static/css/hw3_semantic.css" rel="stylesheet" media="all">
-
-
     </head>
+
     <body>
         <main class="ui grid">
             <article class="computer only row">
                 <h2 hidden> For Computer Display </h2>
                 <nav class="ui five item fixed stackable tabular huge menu">
-                  <a class="active item" data-tab="home-page">Home</a>
-                  <a class="item" data-tab="products-page">Products</a>
-                  <a class="item" data-tab="location-page">Location</a>
-                  <a class="item" data-tab="extra-page">Extra</a>
-                  <a class="item" data-tab="contact-page">Contact</a>
+                        <a class="active item" data-tab="home-page">
+                            <i class="home icon"></i>Home
+                        </a>
+                        <a class="item" data-tab="products-page">
+                            <i class="product hunt icon"></i>Products</a>
+                        <a class="item" data-tab="location-page">
+                            <i class="location arrow icon"></i>Location</a>
+                        <a class="item" data-tab="extra-page">
+                            <i class="info icon"></i>Extra</a>
+                        <a class="item" data-tab="contact-page">
+                            <i class="phone icon"></i>Contact</a>
                 </nav>
                 <div class="ui hidden section divider"></div>
                 <article class="ui stackable container">
@@ -171,11 +177,18 @@
                         </article>
                         <article class="ui segment tab" data-tab="location-page">
                             <h2>Location Page</h2>
-                            <p>Get in touch with me on the contact page.</p>
+<!--                            <canvas id="map" width="800" height="600"></canvas>-->
+                            <div id="map" style="height:400px;"></div>
+
+
+
+
                         </article>
                         <article class="ui segment tab" data-tab="extra-page">
                             <h2>Extra Page</h2>
                             <p>Get in touch with me on the contact page.</p>
+
+
                         </article>
                         <article class="ui segment tab" data-tab="contact-page">
                             <h2>Contact Us</h2>
@@ -200,17 +213,17 @@
                                         <form class="ui form">
                                             <div class="field">
                                               <label for="name">Name</label>
-                                              <input type="text" name="name" placeholder="Your name" required>
+                                              <input type="text" id="name" name="name" placeholder="Your name" required>
                                             </div>
 
                                             <div class="field">
                                               <label for="email">Email</label>
-                                              <input type="email"  name="email" placeholder="Your email address" required>
+                                              <input type="email" id="email"  name="email" placeholder="Your email address" required>
                                             </div>
 
                                             <div class="field">
                                               <label for="comment">Comment</label>
-                                              <textarea  name="comment" required></textarea>
+                                              <textarea id="comment" name="comment" required></textarea>
                                             </div>
 
                                             <button class="ui button" type="submit">Submit</button>
@@ -436,17 +449,17 @@
                                             <form class="ui form">
                                             <div class="field">
                                               <label for="name">Name</label>
-                                              <input type="text" id="name" name="name" placeholder="Your name" required>
+                                              <input type="text" id="m-name" name="name" placeholder="Your name" required>
                                             </div>
 
                                             <div class="field">
                                               <label for="email">Email</label>
-                                              <input type="email" id="email" name="email" placeholder="Your email address" required>
+                                              <input type="email" id="m-email" name="email" placeholder="Your email address" required>
                                             </div>
 
                                             <div class="field">
                                               <label for="comment">Comment</label>
-                                              <textarea id="comment" name="comment" required></textarea>
+                                              <textarea id="m-comment" name="comment" required></textarea>
                                             </div>
 
                                             <button class="ui button" type="submit">Submit</button>
@@ -465,6 +478,7 @@
         <script src="./static/js/jquery_3_6_1_min.js"></script>
         <script src="./static/js/semantic.min.js"></script>
         <script src="./static/js/hw3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
     </body>
 
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My Map</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+  <style>
+    #map {
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Map</h1>
+  <div class="ui top attached tabular menu">
+    <a class="item active" data-tab="about">About</a>
+    <a class="item" data-tab="map">Map</a>
+  </div>
+  <div class="ui bottom attached tab segment" data-tab="about">
+    <p>This is a map of your current location.</p>
+  </div>
+  <div class="ui bottom attached tab segment" data-tab="map">
+    <div id="map"></div>
+<!--    <canvas id="map" width="800" height="600"></canvas>-->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script>
+    // 创建一个Leaflet地图对象
+    var map = L.map('map').setView([37.7749, -122.4194], 13);
+
+    // 添加一个地图图层
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(map);
+
+    // 在选项卡切换时显示地图
+    $('a[data-tab="map"]').on('click', function() {
+      // 获取用户当前位置
+      if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          // 设置地图中心点为用户当前位置
+          map.setView([position.coords.latitude, position.coords.longitude], 13);
+
+          // 在选项卡的标题中显示地图
+          $('a[data-tab="map"]').text('Map (' + map.getCenter().toString() + ')');
+
+          // 在地图上添加一个标记，标记用户当前位置
+          var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+          marker.bindPopup("You are here!").openPopup();
+        });
+      } else {
+        alert("Geolocation is not supported by your browser.");
+      }
+    });
+
+    // 初始化选项卡
+    $('.menu .item').tab();
+  </script>
+</body>
+</html>
