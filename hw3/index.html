@@ -1,262 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8">
         <title>ABC Toys</title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
-<!--        <link href="./static/css/semantic.min.css" rel="stylesheet">-->
-<!--        <link href="./static/fontawesome/all.css" rel="stylesheet">-->
         <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css" rel="stylesheet">
-<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
         <link href="./static/css/hw3_semantic.css" rel="stylesheet" media="all">
 
 
     </head>
     <body>
-       <main class="ui grid">
-        <article class="computer only row">
-            <nav class="ui five item fixed stackable tabular huge menu">
-              <a class="active item" data-tab="home-page">Home</a>
-              <a class="item" data-tab="products-page">Products</a>
-              <a class="item" data-tab="location-page">Location</a>
-              <a class="item" data-tab="extra-page">Extra</a>
-              <a class="item" data-tab="contact-page">Contact</a>
-            </nav>
-            <div class="ui hidden section divider"></div>
-            <article class="ui stackable container">
-                <article class="row">
-                    <h3 class="ui large header">ABC Toys</h3>
-
-                    <article class="ui segment grid tab active " data-tab="home-page">
-                        <section class="ui center aligned container">
-                            <h1> Love, safe, fun</h1>
-                            <P>ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
-                            <p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.
-                            By the way, parents love our toys too</p>
-                            <div class="ui green massive button">Get started today</div>
-                        </section>
-
-                        <div class="ui hidden section divider"></div>
-                        <div class="ui hidden section divider"></div>
-                        <article class="three column row">
-                            <section class="column">
-                              <h1 class="ui huge header">Lego Police Station</h1>
-                              <p>LEGO City Police Station 60246 Police Toy, Fun Building Set for Kids, New 2020 (743 Pieces)</p>
-                                <div class="ui small primary button"> View details &raquo;</div>
-                            </section>
-                            <section class="column">
-                              <h1 class="ui huge header">Play-Doh</h1>
-                              <p> Play-Doh Modeling Compound 36 Pack Case of Colors, Non-Toxic, Assorted Colors, 3 Oz Cans (Amazon Exclusive)</p>
-                              <div class="ui small primary button">View details &raquo;</div>
-                            </section>
-
-                            <section class="column">
-                              <h1 class="ui huge header">Wood Train</h1>
-                              <p>Melissa & Doug Wooden Train Cars (8 pcs) - Magnetic Train, Wooden Train Toys, Train Sets For Toddlers And Kids Ages 3+</p>
-                                <div class="ui small primary button"> View details &raquo;</div>
-                            </section>
-                        </article>
-                        <div class="ui hidden section divider"></div>
-                    </article>
-                    <article class="ui segment tab" data-tab="products-page">
-                        <!-- Toy #1 -->
-                        <article class="ui styled fluid accordion">
-                          <div class="title">
-                            <i class="dropdown icon"></i>
-                            LEGO City Police Station
-                          </div>
-                          <arrticle class="content">
-                            <p>
-                                LEGO City Police Station 60246 Police Toy, Fun Building Set for Kids, New 2020 (743 Pieces).
-                           </p>
-                            <ul>
-                                <li> <a href="https://www.amazon.com/LEGO-Police-Station-Building-Pieces/dp/B07Y8TV5PP" target="_blank">Buy me</a></li>
-                                <li>Here’s a great building set for kids who love action-packed building toys: The LEGO City Police Station playset with exploding cell, cool vehicles and fun characters!</li>
-                                <li>Children can have fun with the feature-rich police headquarters model that features a jailbreak explosion function and a light-brick searchlight, plus a police car with a sound-brick siren!</li>
-                                <li>The action-packed toy police station comes with 2 trucks, a motorcycle, a drone, and 6 LEGO City TV series minifigures, including Duke DeTain, Chief Wheeler and Daisy Kaboom, plus 2 dog figures</li>
-                                <li>This multi-vehicle LEGO City police toy sparks imagination, offers endless build-and-play fun, and is an action-filled holiday, birthday or anyday gift for kids ages 6+ who like trucks, motorcycles and police adventure toys</li>
-                                <li>When built, the toy police station building measures over 9” (24cm) high, 18” (48cm) wide, and 5” (15cm) deep, while the police truck measures over 2" (6cm) high, 4" (12cm) long and 2" (7cm) wide</li>
-
-                            </ul>
-                             <figure>
-                                 <img   srcset="./static/img/lego_police_small.png 640w, ./static/img/lego_police_large.png 1500w"
-                                        sizes="(max-width: 600px) 70vw, (max-width: 768px) 33vw, 45vw"
-                                        src="./static/img/lego_police_large.png" alt="LEGO Police Station">
-                             </figure>
-
-                          </arrticle>
-                        </article>
-                        <!-- Toy #2 -->
-                        <article class="ui styled fluid  accordion">
-                          <div class="title">
-                            <i class="dropdown icon"></i>
-                            Play-Doh
-                          </div>
-                          <article class="content">
-                            <p>
-                                Play-Doh Modeling Compound 36 Pack Case of Colors, Non-Toxic, Assorted Colors, 3 Oz Cans (Amazon Exclusive).
-                            </p>
-                              <ul>
-                                  <li><a href="https://www.amazon.com/Play-Doh-Modeling-Compound-Non-Toxic-Exclusive/dp/B00JM5GZGW" target="_blank">Buy me</a></li>
-                                  <li>OVER 6 POUNDS OF PLAY-DOH COMPOUND – This Play-Doh modeling compound 36 pack has 36 assorted colors in 3-ounce cans for all your colorful creative needs, and there's plenty for kids to share!</li>
-                                  <li>MEGA PACK OF MEGA PLAY-DOH FUN – Shape, squish, mix, and make it all. Great for lots of uses like classrooms, play dates, arts and crafts, party favors for kids, birthday gifts, or a Play-Doh refill.</li>
-                                  <li>SHAPE YOUR IMAGINATION – Squishy, bright, non-toxic Play-Doh compound sparks imaginations for kids 2 and up who love arts and crafts like modeling clay.</li>
-                                  <li>EASY-OPEN, RECYCLABLE PACKAGE - Ships in simple recyclable packaging that’s easy to open and frustration free, and the Play-Doh cans and lids are also recyclable to help build a more sustainable world!</li>
-                              </ul>
-                              <figure>
-                                <img
-                                    srcset="./static/img/playdoh_small.png 640w, ./static/img/playdoh_large.png 1500w"
-                                    sizes="(max-width: 600px) 70vw, (max-width: 768px) 33vw, 45vw"
-                                    src="./static/img/playdoh_large.png" alt="Playdoh">
-                              </figure>
-                          </article>
-                        </article>
-                        <!-- Toy #3 -->
-                        <article class="ui styled fluid  accordion">
-                          <div class="title">
-                            <i class="dropdown icon"></i>
-                            Wooden Train
-                          </div>
-                          <article class="content">
-                            <p>
-                             Melissa & Doug Wooden Train Cars (8 pcs) - Magnetic Train, Wooden Train Toys, Train Sets For Toddlers And Kids Ages 3+.
-
-                            </p>
-                            <ul>
-                                  <li><a href="https://www.amazon.com/Melissa-Doug-Wooden-Train-Cars/dp/B01B1US01I" target="_blank">Buy me</a></li>
-                                  <li>ALL ABOARD FOR TRAIN PLAY: Featuring eight wooden train cars, each approximately three inches long, the Melissa & Doug Wooden Train Cars link together with magnetic couplers in endless combinations for lots of imaginative play. </li>
-                                  <li> HIGH-QUALITY KIDS TRAIN CARS: The Melissa & Doug Wooden Train Cars are brightly painted and beautifully crafted train cars that include a steam engine, caboose, coal car, passenger car, and more. Made from high-quality materials.</li>
-                                  <li>EASY TO PLAY AND STORE: This set is sized to play perfectly with Melissa & Doug activity rugs, train tracks, or on its own. Pieces all store neatly in the divided wooden storage tray. </li>
-                                  <li>GREAT GIFT FOR AGES 3 AND UP: This set makes a great gift for kids ages 3 years old and up, inspiring hours of hands-on, screen-free play. The Melissa & Doug Round the Rails Train Rug is a great add-on to give kids a dedicated space for imaginative play.</li>
-                                  <li>“THE GOLD STANDARD IN CHILDHOOD PLAY”: For more than 30 years, Melissa & Doug has created beautifully designed imagination- and creativity-sparking products that NBC News called “the gold standard in early childhood play.”</li>
-                            </ul>
-                            <figure>
-                                <img srcset="./static/img/train_small.png 640w, ./static/img/train_large.png 1500w"
-                                     sizes="(max-width: 600px) 70vw, (max-width: 768px) 33vw, 45vw"
-                                     src="./static/img/train_large.png" alt="Melissa & Doug Wooden Train">
-                            </figure>
-
-                          </article>
-                        </article>
-                        <!-- Toy #4 -->
-                        <article class="ui styled fluid  accordion">
-                          <div class="title">
-                            <i class="dropdown icon"></i>
-                            KidKraft kitchen
-                          </div>
-                          <div class="content">
-                            <p>
-                                KidKraft Ultimate Corner Wooden Play Kitchen with Lights & Sounds, Play Phone and Curtains, White ,Gift for Ages 3+.
-                                <ul>
-                                    <li> <a href="https://www.amazon.com/KidKraft-Ultimate-Kitchen-exclusive-Exclusive/dp/B01H1HENP2" target="_blank">Buy me</a></li>
-                                    <li>Innovative corner design fits perfectly across two walls </li>
-                                    <li>Burners have realistic lights and sound </li>
-                                    <li>Shelving and hanging pegs for pots, pans and accessories </li>
-                                    <li>Oven, microwave, refrigerator, freezer and washer doors all open and close </li>
-                                    <li>Cordless phone with hands-free clip; removable sink for easy cleanup </li>
-                                    <li>Crafted of premium, recyclable materials for long-lasting play </li>
-                                </ul>
-                            </p>
-                            <figure>
-                                <img srcset="./static/img/kidkraft_kitchen_small.png 640w, ./static/img/kidkraft_kitchen_large.png 1050w"
-                                     sizes="(max-width: 600px) 70vw, (max-width: 768px) 33vw, 45vw"
-                                     src="./static/img/kidkraft_kitchen_large.png" alt="KidKraft kitchen">
-                            </figure>
-
-                          </div>
-                        </article>
-                    </article>
-                    <article class="ui segment tab" data-tab="location-page">
-                        <h2>Location Page</h2>
-                        <p>Get in touch with me on the contact page.</p>
-                    </article>
-                    <article class="ui segment tab" data-tab="extra-page">
-                        <h2>Extra Page</h2>
-                        <p>Get in touch with me on the contact page.</p>
-                    </article>
-                    <article class="ui segment tab" data-tab="contact-page">
-                        <h1>Contact Us</h1>
-                        <div class="ui grid">
-                            <div class="row">
-                                <div class="seven wide column">
-                                    <h3>Address</h3>
-                                    <p>1700 W Hillsdale Blvd</p>
-                                    <p>San Mateo, CA 94402</p>
-
-                                    <h3>Telephone</h3>
-                                    <p>(650)574-6161</p>
-
-                                    <h3>Email</h3>
-                                    <p>csmadmission@smccd.edu</p>
-
-                                    <h3>Facebook</h3>
-                                    <p><a href="https://www.facebook.com/fakecompany" target="_blank">facebook.com/fakecompany</a></p>
-                                </div>
-                                <div class="nine wide column">
-                                    <h3>Send Us a Message</h3>
-                                    <form class="ui form">
-                                        <div class="field">
-                                          <label for="name">Name</label>
-                                          <input type="text" name="name" placeholder="Your name" required>
-                                        </div>
-
-                                        <div class="field">
-                                          <label for="email">Email</label>
-                                          <input type="email"  name="email" placeholder="Your email address" required>
-                                        </div>
-
-                                        <div class="field">
-                                          <label for="comment">Comment</label>
-                                          <textarea  name="comment" required></textarea>
-                                        </div>
-
-                                        <button class="ui button" type="submit">Submit</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </article>
-
-                <footer class="row">
-                    <div class="column">
-                      <div class="ui divider"></div>
-                      <footer>&copy; 2023 Company, Inc.</footer>
-                    </div>
-                </footer>
-            </article>
-        </article>
-
-        <article class="mobile only row">
-            <div class = "ui top attached menu">
-                  <a class="sidebar item">
-                      <i class="sidebar icon"></i>
-                      Menu
-                  </a>
-            </div>
-            <div class = "ui bottom attached segment">
-                <div class = "ui thin labeled icon left inverted inline vertical sidebar menu">
-                    <a class="active item" data-tab="home-page">
-                        <i class="home icon"></i>Home
-                    </a>
-                    <a class="item" data-tab="products-page">
-                        <i class="product hunt icon"></i>Products</a>
-                    <a class="item" data-tab="location-page">
-                        <i class="location arrow icon"></i>Location</a>
-                    <a class="item" data-tab="extra-page">
-                        <i class="info icon"></i>Extra</a>
-                    <a class="item" data-tab="contact-page">
-                        <i class="phone icon"></i>Contact</a>
-                    <div class="ui hidden section divider"></div>
-                </div>
-                <div class="pusher">
-                    <div class="ui stackable container">
+        <main class="ui grid">
+            <article class="computer only row">
+                <nav class="ui five item fixed stackable tabular huge menu">
+                  <a class="active item" data-tab="home-page">Home</a>
+                  <a class="item" data-tab="products-page">Products</a>
+                  <a class="item" data-tab="location-page">Location</a>
+                  <a class="item" data-tab="extra-page">Extra</a>
+                  <a class="item" data-tab="contact-page">Contact</a>
+                </nav>
+                <div class="ui hidden section divider"></div>
+                <article class="ui stackable container">
                     <article class="row">
                         <h3 class="ui large header">ABC Toys</h3>
 
                         <article class="ui segment grid tab active " data-tab="home-page">
                             <section class="ui center aligned container">
-                                <h1> Love, safe, fun</h1>
+                                <h2> Love, safe, fun</h2>
                                 <P>ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
                                 <p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.
                                 By the way, parents love our toys too</p>
@@ -265,34 +35,34 @@
 
                             <div class="ui hidden section divider"></div>
                             <div class="ui hidden section divider"></div>
-                            <article class="three column row">
+                            <div class="three column row">
                                 <section class="column">
-                                  <h1 class="ui huge header">Lego Police Station</h1>
+                                  <h2 class="ui huge header">Lego Police Station</h2>
                                   <p>LEGO City Police Station 60246 Police Toy, Fun Building Set for Kids, New 2020 (743 Pieces)</p>
                                     <div class="ui small primary button"> View details &raquo;</div>
                                 </section>
                                 <section class="column">
-                                  <h1 class="ui huge header">Play-Doh</h1>
+                                  <h2 class="ui huge header">Play-Doh</h2>
                                   <p> Play-Doh Modeling Compound 36 Pack Case of Colors, Non-Toxic, Assorted Colors, 3 Oz Cans (Amazon Exclusive)</p>
                                   <div class="ui small primary button">View details &raquo;</div>
                                 </section>
 
                                 <section class="column">
-                                  <h1 class="ui huge header">Wood Train</h1>
+                                  <h2 class="ui huge header">Wood Train</h2>
                                   <p>Melissa & Doug Wooden Train Cars (8 pcs) - Magnetic Train, Wooden Train Toys, Train Sets For Toddlers And Kids Ages 3+</p>
                                     <div class="ui small primary button"> View details &raquo;</div>
                                 </section>
-                            </article>
+                            </div>
                             <div class="ui hidden section divider"></div>
                         </article>
-                        <article class="ui segment tab" data-tab="products-page">
+                        <div class="ui segment tab" data-tab="products-page">
                             <!-- Toy #1 -->
                             <article class="ui styled fluid accordion">
                               <div class="title">
                                 <i class="dropdown icon"></i>
                                 LEGO City Police Station
                               </div>
-                              <arrticle class="content">
+                              <div class="content">
                                 <p>
                                     LEGO City Police Station 60246 Police Toy, Fun Building Set for Kids, New 2020 (743 Pieces).
                                </p>
@@ -311,7 +81,7 @@
                                             src="./static/img/lego_police_large.png" alt="LEGO Police Station">
                                  </figure>
 
-                              </arrticle>
+                              </div>
                             </article>
                             <!-- Toy #2 -->
                             <article class="ui styled fluid  accordion">
@@ -319,7 +89,7 @@
                                 <i class="dropdown icon"></i>
                                 Play-Doh
                               </div>
-                              <article class="content">
+                              <div class="content">
                                 <p>
                                     Play-Doh Modeling Compound 36 Pack Case of Colors, Non-Toxic, Assorted Colors, 3 Oz Cans (Amazon Exclusive).
                                 </p>
@@ -336,7 +106,7 @@
                                         sizes="(max-width: 600px) 70vw, (max-width: 768px) 33vw, 45vw"
                                         src="./static/img/playdoh_large.png" alt="Playdoh">
                                   </figure>
-                              </article>
+                              </div>
                             </article>
                             <!-- Toy #3 -->
                             <article class="ui styled fluid  accordion">
@@ -344,7 +114,7 @@
                                 <i class="dropdown icon"></i>
                                 Wooden Train
                               </div>
-                              <article class="content">
+                              <div class="content">
                                 <p>
                                  Melissa & Doug Wooden Train Cars (8 pcs) - Magnetic Train, Wooden Train Toys, Train Sets For Toddlers And Kids Ages 3+.
 
@@ -363,7 +133,7 @@
                                          src="./static/img/train_large.png" alt="Melissa & Doug Wooden Train">
                                 </figure>
 
-                              </article>
+                              </div>
                             </article>
                             <!-- Toy #4 -->
                             <article class="ui styled fluid  accordion">
@@ -392,7 +162,7 @@
 
                               </div>
                             </article>
-                        </article>
+                        </div>
                         <article class="ui segment tab" data-tab="location-page">
                             <h2>Location Page</h2>
                             <p>Get in touch with me on the contact page.</p>
@@ -402,69 +172,284 @@
                             <p>Get in touch with me on the contact page.</p>
                         </article>
                         <article class="ui segment tab" data-tab="contact-page">
-                            <h1>Contact Us</h1>
+                            <h2>Contact Us</h2>
                             <div class="ui grid">
                                 <div class="row">
-                                    <div class="seven wide column">
-                                  <h3>Address</h3>
-                                  <p>1700 W Hillsdale Blvd</p>
-                                  <p>San Mateo, CA 94402</p>
+                                    <article class="seven wide column">
+                                        <h3>Address</h3>
+                                        <p>1700 W Hillsdale Blvd</p>
+                                        <p>San Mateo, CA 94402</p>
 
-                                  <h3>Telephone</h3>
-                                  <p>(650)574-6161</p>
+                                        <h3>Telephone</h3>
+                                        <p>(650)574-6161</p>
 
-                                  <h3>Email</h3>
-                                  <p>csmadmission@smccd.edu</p>
+                                        <h3>Email</h3>
+                                        <p>csmadmission@smccd.edu</p>
 
-                                  <h3>Facebook</h3>
-                                  <p><a href="https://www.facebook.com/fakecompany" target="_blank">facebook.com/fakecompany</a></p>
+                                        <h3>Facebook</h3>
+                                        <p><a href="https://www.facebook.com/fakecompany" target="_blank">facebook.com/fakecompany</a></p>
+                                    </article>
+                                    <section class="nine wide column">
+                                        <h3>Send Us a Message</h3>
+                                        <form class="ui form">
+                                            <div class="field">
+                                              <label for="name">Name</label>
+                                              <input type="text" name="name" placeholder="Your name" required>
+                                            </div>
+
+                                            <div class="field">
+                                              <label for="email">Email</label>
+                                              <input type="email"  name="email" placeholder="Your email address" required>
+                                            </div>
+
+                                            <div class="field">
+                                              <label for="comment">Comment</label>
+                                              <textarea  name="comment" required></textarea>
+                                            </div>
+
+                                            <button class="ui button" type="submit">Submit</button>
+                                        </form>
+                                    </section>
                                 </div>
-                                <div class="nine wide column">
-                                  <h3>Send Us a Message</h3>
-                                  <form class="ui form">
-                                    <div class="field">
-                                      <label for="name">Name</label>
-                                      <input type="text" id="name" name="name" placeholder="Your name" required>
-                                    </div>
-
-                                    <div class="field">
-                                      <label for="email">Email</label>
-                                      <input type="email" id="email" name="email" placeholder="Your email address" required>
-                                    </div>
-
-                                    <div class="field">
-                                      <label for="comment">Comment</label>
-                                      <textarea id="comment" name="comment" required></textarea>
-                                    </div>
-
-                                    <button class="ui button" type="submit">Submit</button>
-                                  </form>
-                                </div>
-                            </div>
                             </div>
                         </article>
                     </article>
 
-                    <footer class="row">
+                    <div class="row">
                         <div class="column">
                           <div class="ui divider"></div>
                           <footer>&copy; 2023 Company, Inc.</footer>
                         </div>
-                    </footer>
-                  </div>
+                    </div>
+                </article>
+            </article>
+
+            <article class="mobile only row">
+                <div class = "ui top attached menu">
+                      <a class="sidebar item">
+                          <i class="sidebar icon"></i>
+                          Menu
+                      </a>
                 </div>
-            </div>
-        </article>
-    </main>
+                <div class = "ui bottom attached segment">
+                    <div class = "ui thin labeled icon left inverted inline vertical sidebar menu">
+                        <a class="active item" data-tab="home-page">
+                            <i class="home icon"></i>Home
+                        </a>
+                        <a class="item" data-tab="products-page">
+                            <i class="product hunt icon"></i>Products</a>
+                        <a class="item" data-tab="location-page">
+                            <i class="location arrow icon"></i>Location</a>
+                        <a class="item" data-tab="extra-page">
+                            <i class="info icon"></i>Extra</a>
+                        <a class="item" data-tab="contact-page">
+                            <i class="phone icon"></i>Contact</a>
+                        <div class="ui hidden section divider"></div>
+                    </div>
+                    <div class="pusher">
+                        <div class="ui stackable container">
+                        <article class="row">
+                            <h3 class="ui large header">ABC Toys</h3>
 
+                            <article class="ui segment grid tab active " data-tab="home-page">
+                                <section class="ui center aligned container">
+                                    <h2> Love, safe, fun</h2>
+                                    <P>ABC Toys is a company that opened its doors in 2001 and it has kept its mission for all those years.</p>
+                                    <p>The mission of our company is to create toys that are safe for kindergarten kids but that challenge the kids' mind and motor skills making learning a fun task.
+                                    By the way, parents love our toys too</p>
+                                    <div class="ui green massive button">Get started today</div>
+                                </section>
 
+                                <div class="ui hidden section divider"></div>
+                                <div class="ui hidden section divider"></div>
+                                <article class="three column row">
+                                    <section class="column">
+                                      <h2 class="ui huge header">Lego Police Station</h2>
+                                      <p>LEGO City Police Station 60246 Police Toy, Fun Building Set for Kids, New 2020 (743 Pieces)</p>
+                                        <div class="ui small primary button"> View details &raquo;</div>
+                                    </section>
+                                    <section class="column">
+                                      <h2 class="ui huge header">Play-Doh</h2>
+                                      <p> Play-Doh Modeling Compound 36 Pack Case of Colors, Non-Toxic, Assorted Colors, 3 Oz Cans (Amazon Exclusive)</p>
+                                      <div class="ui small primary button">View details &raquo;</div>
+                                    </section>
+
+                                    <section class="column">
+                                      <h2 class="ui huge header">Wood Train</h2>
+                                      <p>Melissa & Doug Wooden Train Cars (8 pcs) - Magnetic Train, Wooden Train Toys, Train Sets For Toddlers And Kids Ages 3+</p>
+                                        <div class="ui small primary button"> View details &raquo;</div>
+                                    </section>
+                                </article>
+                                <div class="ui hidden section divider"></div>
+                            </article>
+                            <article class="ui segment tab" data-tab="products-page">
+                                <!-- Toy #1 -->
+                                <article class="ui styled fluid accordion">
+                                  <div class="title">
+                                    <i class="dropdown icon"></i>
+                                    LEGO City Police Station
+                                  </div>
+                                  <div class="content">
+                                    <p>
+                                        LEGO City Police Station 60246 Police Toy, Fun Building Set for Kids, New 2020 (743 Pieces).
+                                   </p>
+                                    <ul>
+                                        <li> <a href="https://www.amazon.com/LEGO-Police-Station-Building-Pieces/dp/B07Y8TV5PP" target="_blank">Buy me</a></li>
+                                        <li>Here’s a great building set for kids who love action-packed building toys: The LEGO City Police Station playset with exploding cell, cool vehicles and fun characters!</li>
+                                        <li>Children can have fun with the feature-rich police headquarters model that features a jailbreak explosion function and a light-brick searchlight, plus a police car with a sound-brick siren!</li>
+                                        <li>The action-packed toy police station comes with 2 trucks, a motorcycle, a drone, and 6 LEGO City TV series minifigures, including Duke DeTain, Chief Wheeler and Daisy Kaboom, plus 2 dog figures</li>
+                                        <li>This multi-vehicle LEGO City police toy sparks imagination, offers endless build-and-play fun, and is an action-filled holiday, birthday or anyday gift for kids ages 6+ who like trucks, motorcycles and police adventure toys</li>
+                                        <li>When built, the toy police station building measures over 9” (24cm) high, 18” (48cm) wide, and 5” (15cm) deep, while the police truck measures over 2" (6cm) high, 4" (12cm) long and 2" (7cm) wide</li>
+
+                                    </ul>
+                                     <figure>
+                                         <img   srcset="./static/img/lego_police_small.png 640w, ./static/img/lego_police_large.png 1500w"
+                                                sizes="(max-width: 600px) 70vw, (max-width: 768px) 33vw, 45vw"
+                                                src="./static/img/lego_police_large.png" alt="LEGO Police Station">
+                                     </figure>
+
+                                  </div>
+                                </article>
+                                <!-- Toy #2 -->
+                                <article class="ui styled fluid  accordion">
+                                  <div class="title">
+                                    <i class="dropdown icon"></i>
+                                    Play-Doh
+                                  </div>
+                                  <div class="content">
+                                    <p>
+                                        Play-Doh Modeling Compound 36 Pack Case of Colors, Non-Toxic, Assorted Colors, 3 Oz Cans (Amazon Exclusive).
+                                    </p>
+                                      <ul>
+                                          <li><a href="https://www.amazon.com/Play-Doh-Modeling-Compound-Non-Toxic-Exclusive/dp/B00JM5GZGW" target="_blank">Buy me</a></li>
+                                          <li>OVER 6 POUNDS OF PLAY-DOH COMPOUND – This Play-Doh modeling compound 36 pack has 36 assorted colors in 3-ounce cans for all your colorful creative needs, and there's plenty for kids to share!</li>
+                                          <li>MEGA PACK OF MEGA PLAY-DOH FUN – Shape, squish, mix, and make it all. Great for lots of uses like classrooms, play dates, arts and crafts, party favors for kids, birthday gifts, or a Play-Doh refill.</li>
+                                          <li>SHAPE YOUR IMAGINATION – Squishy, bright, non-toxic Play-Doh compound sparks imaginations for kids 2 and up who love arts and crafts like modeling clay.</li>
+                                          <li>EASY-OPEN, RECYCLABLE PACKAGE - Ships in simple recyclable packaging that’s easy to open and frustration free, and the Play-Doh cans and lids are also recyclable to help build a more sustainable world!</li>
+                                      </ul>
+                                      <figure>
+                                        <img
+                                            srcset="./static/img/playdoh_small.png 640w, ./static/img/playdoh_large.png 1500w"
+                                            sizes="(max-width: 600px) 70vw, (max-width: 768px) 33vw, 45vw"
+                                            src="./static/img/playdoh_large.png" alt="Playdoh">
+                                      </figure>
+                                  </div>
+                                </article>
+                                <!-- Toy #3 -->
+                                <article class="ui styled fluid  accordion">
+                                  <div class="title">
+                                    <i class="dropdown icon"></i>
+                                    Wooden Train
+                                  </div>
+                                  <div class="content">
+                                    <p>
+                                     Melissa & Doug Wooden Train Cars (8 pcs) - Magnetic Train, Wooden Train Toys, Train Sets For Toddlers And Kids Ages 3+.
+
+                                    </p>
+                                    <ul>
+                                          <li><a href="https://www.amazon.com/Melissa-Doug-Wooden-Train-Cars/dp/B01B1US01I" target="_blank">Buy me</a></li>
+                                          <li>ALL ABOARD FOR TRAIN PLAY: Featuring eight wooden train cars, each approximately three inches long, the Melissa & Doug Wooden Train Cars link together with magnetic couplers in endless combinations for lots of imaginative play. </li>
+                                          <li> HIGH-QUALITY KIDS TRAIN CARS: The Melissa & Doug Wooden Train Cars are brightly painted and beautifully crafted train cars that include a steam engine, caboose, coal car, passenger car, and more. Made from high-quality materials.</li>
+                                          <li>EASY TO PLAY AND STORE: This set is sized to play perfectly with Melissa & Doug activity rugs, train tracks, or on its own. Pieces all store neatly in the divided wooden storage tray. </li>
+                                          <li>GREAT GIFT FOR AGES 3 AND UP: This set makes a great gift for kids ages 3 years old and up, inspiring hours of hands-on, screen-free play. The Melissa & Doug Round the Rails Train Rug is a great add-on to give kids a dedicated space for imaginative play.</li>
+                                          <li>“THE GOLD STANDARD IN CHILDHOOD PLAY”: For more than 30 years, Melissa & Doug has created beautifully designed imagination- and creativity-sparking products that NBC News called “the gold standard in early childhood play.”</li>
+                                    </ul>
+                                    <figure>
+                                        <img srcset="./static/img/train_small.png 640w, ./static/img/train_large.png 1500w"
+                                             sizes="(max-width: 600px) 70vw, (max-width: 768px) 33vw, 45vw"
+                                             src="./static/img/train_large.png" alt="Melissa & Doug Wooden Train">
+                                    </figure>
+
+                                  </div>
+                                </article>
+                                <!-- Toy #4 -->
+                                <article class="ui styled fluid  accordion">
+                                    <div class="title">
+                                    <i class="dropdown icon"></i>
+                                    KidKraft kitchen
+                                    </div>
+                                    <div class="content">
+                                        <p>
+                                            KidKraft Ultimate Corner Wooden Play Kitchen with Lights & Sounds, Play Phone and Curtains, White ,Gift for Ages 3+.
+                                            <ul>
+                                                <li> <a href="https://www.amazon.com/KidKraft-Ultimate-Kitchen-exclusive-Exclusive/dp/B01H1HENP2" target="_blank">Buy me</a></li>
+                                                <li>Innovative corner design fits perfectly across two walls </li>
+                                                <li>Burners have realistic lights and sound </li>
+                                                <li>Shelving and hanging pegs for pots, pans and accessories </li>
+                                                <li>Oven, microwave, refrigerator, freezer and washer doors all open and close </li>
+                                                <li>Cordless phone with hands-free clip; removable sink for easy cleanup </li>
+                                                <li>Crafted of premium, recyclable materials for long-lasting play </li>
+                                            </ul>
+                                        </p>
+                                        <figure>
+                                            <img srcset="./static/img/kidkraft_kitchen_small.png 640w, ./static/img/kidkraft_kitchen_large.png 1050w"
+                                                 sizes="(max-width: 600px) 70vw, (max-width: 768px) 33vw, 45vw"
+                                                 src="./static/img/kidkraft_kitchen_large.png" alt="KidKraft kitchen">
+                                        </figure>
+
+                                  </div>
+                                </article>
+                            </article>
+                            <article class="ui segment tab" data-tab="location-page">
+                                <h2>Location Page</h2>
+                                <p>Get in touch with me on the contact page.</p>
+                            </article>
+                            <article class="ui segment tab" data-tab="extra-page">
+                                <h2>Extra Page</h2>
+                                <p>Get in touch with me on the contact page.</p>
+                            </article>
+                            <article class="ui segment tab" data-tab="contact-page">
+                                <h1>Contact Us</h1>
+                                <div class="ui grid">
+                                    <div class="row">
+                                        <div class="seven wide column">
+                                            <h3>Address</h3>
+                                            <p>1700 W Hillsdale Blvd</p>
+                                            <p>San Mateo, CA 94402</p>
+
+                                            <h3>Telephone</h3>
+                                            <p>(650)574-6161</p>
+
+                                            <h3>Email</h3>
+                                            <p>csmadmission@smccd.edu</p>
+
+                                            <h3>Facebook</h3>
+                                            <p><a href="https://www.facebook.com/fakecompany" target="_blank">facebook.com/fakecompany</a></p>
+                                        </div>
+                                        <div class="nine wide column">
+                                            <h3>Send Us a Message</h3>
+                                            <form class="ui form">
+                                            <div class="field">
+                                              <label for="name">Name</label>
+                                              <input type="text" id="name" name="name" placeholder="Your name" required>
+                                            </div>
+
+                                            <div class="field">
+                                              <label for="email">Email</label>
+                                              <input type="email" id="email" name="email" placeholder="Your email address" required>
+                                            </div>
+
+                                            <div class="field">
+                                              <label for="comment">Comment</label>
+                                              <textarea id="comment" name="comment" required></textarea>
+                                            </div>
+
+                                            <button class="ui button" type="submit">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </article>
+                      </div>
+                    </div>
+                </div>
+            </article>
+        </main>
 
         <script src="./static/js/jquery_3_6_1_min.js"></script>
         <script src="./static/js/semantic.min.js"></script>
         <script src="./static/js/hw3.js"></script>
-        <script>
-            $('.ui.accordion').accordion();
-        </script>
     </body>
 
 </html>
