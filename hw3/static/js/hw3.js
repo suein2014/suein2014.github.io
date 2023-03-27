@@ -1,15 +1,10 @@
 
 function show_map_div(){
         // Create a leaflet map object.
+//        var map = L.map('map').setView([37.7749, -122.4194], 13);
+        var map = L.map('map').setView([37.7749, -122.4194], 13);
+        map.invalidateSize();
 
-        var map = L.map('map',{
-                      container: 'map',
-                      width: '100%',
-                      height: '400px'
-                    }).setView([37.7749, -122.4194], 13);
-
-
-        // add a map layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
           maxZoom: 18
@@ -26,9 +21,9 @@ function show_map_div(){
               // show position data in the tab title.
               $('a[data-tab="location-page"]').text('Location (' + map.getCenter().toString() + ')');
 
-               $('a[data-tab="location-page"]').on('shown.bs.tab', function() {
-  map.invalidateSize();
-});
+//               $('a[data-tab="location-page"]').on('shown.bs.tab', function() {
+//  map.invalidateSize();
+//});
               // add a marker, mark user's position
               var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
               marker.bindPopup("You are here!").openPopup();
@@ -37,7 +32,59 @@ function show_map_div(){
             alert("Geolocation is not supported by your browser.");
           }
         });
+
+
+//        var locationpage = document.getElementById("location-page");
+//
+////        document.getElementById("map").addEventListener("click", function () {
+//          locationpage.style.display = "block";
+//            map.invalidateSize(); // Uncomment this line and re-run to get correct behaviour.
+////            map2.fitBounds([[50.5, 5], [52.5, 6]]);
+////        });
+
+//        document.getElementById("hidelocation").addEventListener("click", function () {
+//            locationpage.style.display = "none";
+//        });
+
     }
+
+
+
+
+function show_map_mobile(){
+        var mobile_map = L.map('m-map').setView([37.7749, -122.4194], 13);
+        mobile_map.invalidateSize();
+
+
+        // add a map layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+          maxZoom: 18
+        }).addTo(mobile_map);
+
+        // when change to the tab: location-page
+        $('a[data-tab="location-page"]').on('click', function() {
+          // get the current position for user
+          if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              // set it as map center
+              mobile_map.setView([position.coords.latitude, position.coords.longitude], 13);
+
+              // show position data in the tab title.
+              $('a[data-tab="location-page"]').text('Location (' + mobile_map.getCenter().toString() + ')');
+              var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(mobile_map);
+              marker.bindPopup("You are here!").openPopup();
+            });
+          } else {
+            alert("Geolocation is not supported by your browser.");
+          }
+        });
+
+}
+
+
+
+
 
 function show_map_canvas(){
 
@@ -113,6 +160,7 @@ $(document).ready(function(){
 
 //    show_map_canvas();
     show_map_div();
+    show_map_mobile();
 
 });
 

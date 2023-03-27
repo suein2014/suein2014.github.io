@@ -30,6 +30,7 @@
   <script>
     // 创建一个Leaflet地图对象
     var map = L.map('map').setView([37.7749, -122.4194], 13);
+    map.invalidateSize();
 
     // 添加一个地图图层
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -39,6 +40,9 @@
 
     // 在选项卡切换时显示地图
     $('a[data-tab="map"]').on('click', function() {
+       $('a[data-tab="location-page"]').on('shown.bs.tab', function() {
+            map.invalidateSize();
+       });
       // 获取用户当前位置
       if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function(position) {
