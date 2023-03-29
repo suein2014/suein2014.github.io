@@ -23,7 +23,7 @@ function show_map_div(){
               var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
               marker.bindPopup("You are here!").openPopup();
             });
-            //IMPORTANT: updaet the layout when container size changed
+            //IMPORTANT: update the layout when container size changed
             map.invalidateSize();
           } else {
             alert("Geolocation is not supported by your browser.");
@@ -56,7 +56,7 @@ function show_map_mobile(){
               var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(mobile_map);
               marker.bindPopup("You are here!").openPopup();
             });
-            //IMPORTANT: updaet the layout when container size changed
+            //IMPORTANT: update the layout when container size changed
             mobile_map.invalidateSize();
           } else {
             alert("Geolocation is not supported by your browser.");
@@ -77,6 +77,19 @@ $(document).ready(function(){
     $('.ui.sidebar').sidebar({
       context: $('.bottom.attached.segment')
     }).sidebar('attach events', '.sidebar.item');
+
+    // Initialize the modal
+    $('.ui.modal').modal();
+
+    // Show the modal when the trigger is clicked
+    $("#toy1-modal-trigger, #toy2-modal-trigger,#toy3-modal-trigger,#toy4-modal-trigger").each(function(){
+        $(this).on('click',function(){
+            modal_i = $(this).attr('id').replace('-trigger','')
+            $('.ui.modal').modal();
+            $("#"+modal_i).modal('show');
+        });
+    })
+
 
 
     //click button of toy1 in homepage  ---> then jump(change) to toy3 products-tab ---> and open this accordion of toy1
@@ -115,6 +128,9 @@ $(document).ready(function(){
 //    show_map_canvas();
     show_map_div();
     show_map_mobile();
+
+
+
 
 });
 
