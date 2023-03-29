@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps JavaScript API Example</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcX5uH3Y_MHxvVwfh9LccjKGe-9yNnBt8"></script>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 8,
+                center: {lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE}
+            });
+        }
+    </script>
+</head>
+<body onload="initMap()">
+    <div id="map" style="height: 500px; width: 100%;"></div>
+</body>
+</html>

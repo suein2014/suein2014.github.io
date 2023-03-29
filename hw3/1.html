@@ -1,24 +1,97 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Leaflet Map Example</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
-    <style>
-        #mapid { height: 500px; }
-    </style>
-</head>
-<body>
-    <div id="mapid"></div>
-    <script>
-        var mymap = L.map('mapid').setView([51.505, -0.09], 13);
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ABC Toys</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+        <link href="./static/css/hw3_semantic.css" rel="stylesheet" media="all">
+    </head>
+
+    <body>
+        <main class="ui grid">
+            <article class="computer only row">
+                <h2 hidden> For Computer Display </h2>
+                <nav class="ui five item fixed stackable tabular huge menu">
+                        <a class="active item" data-tab="home-page">
+                            <i class="home icon"></i>Home
+                        </a>
+                        <a class="item" data-tab="products-page">
+                            <i class="product hunt icon"></i>Products</a>
+                        <a class="item" data-tab="location-page">
+                            <i class="location arrow icon"></i>Location</a>
+                        <a class="item" data-tab="extra-page">
+                            <i class="info icon"></i>Extra</a>
+                        <a class="item" data-tab="contact-page">
+                            <i class="phone icon"></i>Contact</a>
+                </nav>
+                <div class="ui hidden section divider"></div>
+                <article class="ui stackable container">
+                    <h2 hidden> Main Content </h2>
+                    <article class="row">
+                        <h3 class="ui large header">ABC Toys</h3>
+                        <article class="ui segment grid tab active " data-tab="home-page">Homepage</article>
+                        <article class="ui segment grid tab active " data-tab="products-page">Homepage</article>
+                        <article class="ui segment tab" data-tab="location-page">
+                            <h2>Location Page</h2>
+                            <canvas id="map" width="800" height="600"></canvas>
+<!--                            <div id="map" style="height:400px; width:100%"></div>-->
+
+
+
+
+                        </article>
+                        <article class="ui segment grid tab active " data-tab="extra-page">Homepage</article>
+                        <article class="ui segment grid tab active " data-tab="contact-page">Homepage</article>
+                    </article>
+
+                    <div class="row">
+                        <div class="column">
+                          <div class="ui divider"></div>
+                          <footer>&copy; 2023 Company, Inc.</footer>
+                        </div>
+                    </div>
+                </article>
+            </article>
+
+        </main>
+
+        <script src="./static/js/jquery_3_6_1_min.js"></script>
+        <script src="./static/js/semantic.min.js"></script>
+        <script src="./static/js/hw3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+        <script>
+                    var map = L.map('map').setView([37.7749, -122.4194], 13);
+        map.invalidateSize();
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-            maxZoom: 18
-        }).addTo(mymap);
-        L.marker([51.5, -0.09]).addTo(mymap)
-            .bindPopup("<b>Hello world!</b><br />I am a popup.").openPopup();
-    </script>
-</body>
+          attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
+          maxZoom: 18
+        }).addTo(map);
+
+        // when change to the tab: location-page
+        $('a[data-tab="location-page"]').on('click', function() {
+          // get the current position for user
+          if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+              // set it as map center
+              map.setView([position.coords.latitude, position.coords.longitude], 13);
+
+              // show position data in the tab title.
+              $('a[data-tab="location-page"]').text('Location (' + map.getCenter().toString() + ')');
+
+              // add a marker, mark user's position
+              var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+              marker.bindPopup("You are here!").openPopup();
+              // invalidate the size of the map
+              map.invalidateSize();
+            });
+          } else {
+            alert("Geolocation is not supported by your browser.");
+          }
+        });
+        </script>
+    </body>
+
 </html>
