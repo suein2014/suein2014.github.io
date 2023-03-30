@@ -82,7 +82,7 @@ $(document).ready(function(){
     $('.ui.modal').modal();
 
     // Show the modal when the trigger is clicked
-    $("#toy1-modal-trigger, #toy2-modal-trigger,#toy3-modal-trigger,#toy4-modal-trigger").each(function(){
+    $("#toy1-modal-trigger, #toy2-modal-trigger,#toy3-modal-trigger,#toy4-modal-trigger,#m-toy1-modal-trigger, #m-toy2-modal-trigger,#m-toy3-modal-trigger,#m-toy4-modal-trigger").each(function(){
         $(this).on('click',function(){
             modal_i = $(this).attr('id').replace('-trigger','')
             $('.ui.modal').modal();
