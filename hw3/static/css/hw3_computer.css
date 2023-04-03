@@ -1,0 +1,8 @@
+    @media screen and (min-width: 768px) {
+      #map_computer {
+        display: block;
+      }
+      #map_mobile {
+        display: none;
+      }
+    }

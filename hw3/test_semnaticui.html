@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ABC Toys</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+        <link href="./static/css/hw3_semanticui.css" rel="stylesheet" media="all">
+    </head>
+
+    <body>
+        <main class="ui grid">
+            <article class="computer only row">
+                <h2 hidden> For Computer Display </h2>
+                <nav class="ui five item fixed stackable tabular huge menu">
+                        <a class="active item" data-tab="home-page">
+                            <i class="home icon"></i>Home
+                        </a>
+                        <a class="item" data-tab="products-page">
+                            <i class="product hunt icon"></i>Products</a>
+                        <a class="item" data-tab="location-page">
+                            <i class="location arrow icon"></i>Location</a>
+                        <a class="item" data-tab="extra-page">
+                            <i class="info icon"></i>Extra</a>
+                        <a class="item" data-tab="contact-page">
+                            <i class="phone icon"></i>Contact</a>
+                </nav>
+                <div class="ui hidden section divider"></div>
+                <article class="ui stackable container">
+                    <h2 hidden> Main Content </h2>
+                    <article class="row">
+                        <h3 class="ui large header">ABC Toys</h3>
+                      <article class="ui segment grid tab active " data-tab="home-page"></article>
+
+                    </article>
+
+                    <div class="row">
+                        <div class="column">
+                          <div class="ui divider"></div>
+                          <footer>&copy; 2023 ABCToys, Inc.</footer>
+                        </div>
+                    </div>
+                </article>
+            </article>
+
+            <article class="mobile only row">
+                <h2 hidden> For Mobile Display </h2>
+                <div class = "ui top attached menu">
+                      <a class="sidebar item">
+                          <i class="sidebar icon"></i>
+                          Menu
+                      </a>
+                </div>
+                <div class = "ui bottom attached segment">
+                    <div class = "ui grey thin labeled icon left inverted inline vertical sidebar menu">
+                        <a class="active item" data-tab="home-page">
+                            <i class="home icon"></i>Home
+                        </a>
+                        <a class="item" data-tab="products-page">
+                            <i class="product hunt icon"></i>Products</a>
+                        <a class="item" data-tab="location-page">
+                            <i class="location arrow icon"></i>Location</a>
+                        <a class="item" data-tab="extra-page">
+                            <i class="info icon"></i>Extra</a>
+                        <a class="item" data-tab="contact-page">
+                            <i class="phone icon"></i>Contact</a>
+                        <div class="ui hidden section divider"></div>
+                    </div>
+                    <div class="pusher">
+                        <div class="ui stackable container">
+                        <article class="row">
+                            <h3 class="ui large header">ABC Toys</h3>
+                          <article class="ui segment grid tab active " data-tab="home-page"></article>
+                          <h2 hidden> Mobile Home page </h2>
+                          <article class="ui segment grid tab active " data-tab="home-page"></article>
+                          <article class="ui segment grid tab active " data-tab="home-page"></article>
+                          <article class="ui segment grid tab active " data-tab="home-page"></article>
+                          <article class="ui segment grid tab active " data-tab="home-page"></article>
+                          <article class="ui segment grid tab active " data-tab="home-page"></article>
+                        </article>
+                      </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+
+        <script src="./static/js/jquery_3_6_1_min.js"></script>
+        <script src="./static/js/semantic.min.js"></script>
+        <script src="./static/js/hw3_semanticui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    </body>
+
+</html>

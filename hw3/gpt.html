@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tab Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+  <script id="nav-template" type="text/x-handlebars-template">
+    <div class="ui top attached tabular menu">
+      {{#each navs}}
+        <a class="item" data-tab="{{name}}">{{label}}</a>
+      {{/each}}
+    </div>
+    {{#each navs}}
+      <div class="ui bottom attached tab segment" data-tab="{{name}}">
+        <p>{{content}}</p>
+      </div>
+    {{/each}}
+  </script>
+  <script>
+    $(document).ready(function() {
+      var source = $('#nav-template').html();
+      var template = Handlebars.compile(source);
+      var data = {
+        navs: [
+          {
+            name: 'first',
+            label: 'First Tab',
+            content: 'This is the content of the first tab.'
+          },
+          {
+            name: 'second',
+            label: 'Second Tab',
+            content: 'This is the content of the second tab.'
+          },
+          {
+            name: 'third',
+            label: 'Third Tab',
+            content: 'This is the content of the third tab.'
+          }
+        ]
+      };
+      var html = template(data);
+      $('#nav-container').html(html);
+      $('.menu .item').tab();
+    });
+  </script>
+</head>
+<body>
+  <div id="nav-container"></div>
+</body>
+</html>
