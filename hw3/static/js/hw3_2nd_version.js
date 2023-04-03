@@ -2,7 +2,6 @@
 function show_map_div(id_name){
         var map = L.map(id_name).setView([37.7749, -122.4194], 13);
 
-
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
           maxZoom: 18,
@@ -10,14 +9,11 @@ function show_map_div(id_name){
 
         // when change to the tab: location-page
         $('a[data-tab="location-page"]').on('click', function() {
-
           // get the current position for user
           if ("geolocation" in navigator) {
-          map.invalidateSize();
             navigator.geolocation.getCurrentPosition(function(position) {
               // set it as map center
               map.setView([position.coords.latitude, position.coords.longitude], 13);
-
 
               // show position data in the tab title.
               $('a[data-tab="location-page"]').text('Location (' + map.getCenter().toString() + ')');
