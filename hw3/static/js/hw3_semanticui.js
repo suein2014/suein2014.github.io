@@ -13,7 +13,6 @@ function show_map_div(id_name){
 
           // get the current position for user
           if ("geolocation" in navigator) {
-          map.invalidateSize();
             navigator.geolocation.getCurrentPosition(function(position) {
               // set it as map center
               map.setView([position.coords.latitude, position.coords.longitude], 13);
@@ -155,29 +154,19 @@ $(function(){
         others();
     });
 
-//    if (navigator.userAgentData.mobile){
-        loadPartial('mobile_content').then(function() {
-            var source1 = $('.m_content_tpl').html();
-            var template1 = Handlebars.compile(source1);
+    loadPartial('content').then(function() {
+        var source = $('.content_tpl').html();
+        var template = Handlebars.compile(source);
+        var data = {};
+        var html = template(data);
+        $('#content_container').html(html);
+        var html = template1(data);
+        $('#m_content_container').html(html);
+        others();
+        show_map_div('map_computer');
+        show_map_div('map_mobile');
+    });
 
-            var data = {};
-            var html = template1(data);
-            $('#m_content_container').html(html);
-
-            others();
-            show_map_div('map_mobile');
-        });
-//    }else{
-        loadPartial('content').then(function() {
-            var source = $('.content_tpl').html();
-            var template = Handlebars.compile(source);
-            var data = {};
-            var html = template(data);
-            $('#content_container').html(html);
-            others();
-            show_map_div('map_computer');
-        });
-//    };
 
 });
 

@@ -129,16 +129,6 @@ var loadPartial = async function(name) {
   Handlebars.registerPartial(name, html);
 };
 
-function add_type_tpl(){
-    var desk_div = '<div id="map_computer"></div>';
-    var mobile_div = '<div id="map_mobile"></div>';
-    var type_div = !navigator.userAgentData.mobile ? desk_div : mobile_div;
-    console.log(type_div);
-    $('#type_container').html(type_div);
-}
-
-
-
 
 $(function(){
     loadPartial('nav_data').then(function() {
@@ -152,7 +142,7 @@ $(function(){
     });
 
 //    if (navigator.userAgentData.mobile){
-        loadPartial('mobile_content').then(function() {
+        loadPartial('mobile_content_2nd_version').then(function() {
             var source1 = $('.m_content_tpl').html();
             var template1 = Handlebars.compile(source1);
 
@@ -164,7 +154,7 @@ $(function(){
             show_map_div('map_mobile');
         });
 //    }else{
-        loadPartial('content').then(function() {
+        loadPartial('content_2nd_version').then(function() {
             var source = $('.content_tpl').html();
             var template = Handlebars.compile(source);
             var data = {};
