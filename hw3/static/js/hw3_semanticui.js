@@ -1,7 +1,51 @@
+    // main function
+    $(function(){
+        load_partial('nav_data').then(function() {
+            var source = $('.nav_data_tpl').html();
+            var template = Handlebars.compile(source);
+            var data = {};
+            var html = template(data);
+            $('#m_nav_container').html(html);
+            $('#nav_container').html(html);
+            others();
+        });
 
-function show_map(id_name){
+
+        // load content template for computer
+        load_partial('content').then(function() {
+            var source = $('.content_tpl').html();
+            var template = Handlebars.compile(source);
+            var data = {};
+            var html = template(data);
+            $('#content_container').html(html);
+            others();
+
+            setTimeout(function() { //fix the issue of map not filling the container
+             show_map('map_computer');
+         }, 100);
+        });
+
+
+        // load content template for  mobile
+        load_partial('mobile_content').then(function() {
+            var source_m = $('.m_content_tpl').html();
+            var template_m = Handlebars.compile(source_m);
+            var data = {};
+            var html = template_m(data);
+            $('#m_content_container').html(html);
+            others();
+            show_map('map_mobile');
+        });
+
+    });
+
+
+
+
+    //function to show the map
+    function show_map(id_name){
         var map = L.map(id_name).setView([37.7749, -122.4194], 13);
-        map.invalidateSize();
+        //map.invalidateSize();
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
@@ -34,166 +78,64 @@ function show_map(id_name){
     }
 
 
-function jummp_to_toytab(){
-    var toy_array = ["#jump-to-toy1", "#jump-to-toy2", "#jump-to-toy3"];
-    $.each(toy_array, function(index, toy_id){
-        var accordion_id = '#toy' + toy_id.slice(-1) + '-accordion' ;
-        $(toy_id).on('click',function(){
-            $(".menu .item[data-tab='products-page'").tab('change tab', 'products-page')
-            $(accordion_id).accordion('open', 0)
+    //Function to jump to tab
+    function jummp_to_toytab(){
+        var toy_array = ["#jump-to-toy1", "#jump-to-toy2", "#jump-to-toy3",
+        "#m-jump-to-toy1", "#m-jump-to-toy2", "#m-jump-to-toy3"];
+        $.each(toy_array, function(index, toy_id){
+            var accordion_id = '#toy' + toy_id.slice(-1) + '-accordion' ;
+            $(toy_id).on('click',function(){
+                $(".menu .item[data-tab='products-page'").tab('change tab', 'products-page')
+                $(accordion_id).accordion('open', 0)
+            });
         });
-    });
-};
+    };
 
-function others(){
-    $('.ui.menu .item').tab();
-    $('.ui.accordion').accordion();
+    //Functions to do other things: Change tab,  Show side bar, Modal, etc
+    function others(){
+        $('.ui.menu .item').tab();
+        $('.ui.accordion').accordion();
 
-    $('.ui.sidebar').sidebar({
-      context: $('.bottom.attached.segment')
-    }).sidebar('attach events', '.sidebar.item');
+        $('.ui.sidebar').sidebar({
+          context: $('.bottom.attached.segment')
+        }).sidebar('attach events', '.sidebar.item');
 
-    // Initialize the modal
-    $('.ui.modal').modal();
-
-
+        // Initialize the modal
+        $('.ui.modal').modal();
 
 
-    // Show the modal when the trigger is clicked
-    $("#toy1-modal-trigger, #toy2-modal-trigger,#toy3-modal-trigger,#toy4-modal-trigger").each(function(){
-        $(this).on('click',function(){
-            modal_i = $(this).attr('id').replace('-trigger','')
-            $('.ui.modal').modal();
-            $("#"+modal_i).modal('show');
+        // Show the modal when the trigger is clicked
+        $("#toy1-modal-trigger, #toy2-modal-trigger,#toy3-modal-trigger,#toy4-modal-trigger").each(function(){
+            $(this).on('click',function(){
+                modal_i = $(this).attr('id').replace('-trigger','')
+                $('.ui.modal').modal();
+                $("#"+modal_i).modal('show');
+            });
+        })
+
+        //Click the button of toy1|toy2|toy3 in homepage  ---> then jump(change) to the products-tab
+        // ---> and open the respective accordion
+        jummp_to_toytab();
+
+
+        //Click BuyNow button, jump to products tab without any accordion open.
+        $("#buy-now, #m-buy-now").each(function(){
+            $(this).on('click',function(){
+                $(".menu .item[data-tab='products-page'").tab('change tab', 'products-page')
+            });
         });
-    })
-
-    //click button of toy1 in homepage  ---> then jump(change) to toy3 products-tab ---> and open this accordion of toy1
-    jummp_to_toytab();
+    }
 
 
-    //click buy button, change to products tab without any accordion open.
-    $("#buy-now, #m-buy-now").each(function(){
-        $(this).on('click',function(){
-            $(".menu .item[data-tab='products-page'").tab('change tab', 'products-page')
-        });
-    });
-}
-
-
-
-var loadPartial = async function(name) {
-  var html = await $.ajax({url:'partials/' + name + '.html',type:'GET'});
-  Handlebars.registerPartial(name, html);
-};
-
-
-
-async function renderContent() {
-    await loadPartial('mobile_content');
-    var source1 = $('.m_content_tpl').html();
-    var template1 = Handlebars.compile(source1);
-
-    var data = {};
-    var html = template1(data);
-    $('#m_content_container').html(html);
-    others();
-    show_map('map_mobile');
-
-    await loadPartial('content');
-    var source = $('.content_tpl').html();
-    var template = Handlebars.compile(source);
-    var data = {};
-    var html = template(data);
-    $('#content_container').html(html);
-    others();
-    show_map('map_computer');
-}
-
-
-
-$(function(){
-
-    loadPartial('nav_data').then(function() {
-        var source = $('.nav_data_tpl').html();
-        var template = Handlebars.compile(source);
-        var data = {};
-        var html = template(data);
-        $('#m_nav_container').html(html);
-        $('#nav_container').html(html);
-        others();
-    });
-
-
-//    Promise.all([
-//        loadPartial('mobile_content'),
-//        loadPartial('content'),
-//    ]).then(function() {
-//        var mobileSource = $('.m_content_tpl').html();
-//        var mobileTemplate = Handlebars.compile(mobileSource);
-//        var mobileData = {};
-//        var mobileHtml = mobileTemplate(mobileData);
-//        $('#m_content_container').html(mobileHtml);
-//        show_map('map_mobile');
-//
-//        var source = $('.content_tpl').html();
-//        var template = Handlebars.compile(source);
-//        var data = {};
-//        var html = template(data);
-//        $('#content_container').html(html);
-//        show_map('map_computer');
-//    });
+    //load
+    var load_partial = async function(name) {
+      var html = await $.ajax({url:'partials/' + name + '.html',type:'GET'});
+      Handlebars.registerPartial(name, html);
+    };
 
 
 
 
-
-
-//    renderContent();
-
-
-
-
-
-
-
-
-
-    $('#map_computer, #map_mobile').show();
-
-    loadPartial('content').then(function() {
-
-        var source = $('.content_tpl').html();
-        var template = Handlebars.compile(source);
-        var data = {};
-        var html = template(data);
-        $('#content_container').html(html);
-        others();
-        
-        setTimeout(function() { //fix the issue of map not filling the container
-         show_map('map_computer');
-     }, 100);
-    });
-
-
-    loadPartial('mobile_content').then(function() {
-        var source1 = $('.m_content_tpl').html();
-        var template1 = Handlebars.compile(source1);
-
-        var data = {};
-        var html = template1(data);
-        $('#m_content_container').html(html);
-        others();
-        show_map('map_mobile');
-    });
-
-
-
-
-
-
-
-});
 
 
 
