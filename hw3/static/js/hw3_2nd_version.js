@@ -1,5 +1,5 @@
 
-function show_map_div(id_name){
+function show_map(id_name){
         var map = L.map(id_name).setView([37.7749, -122.4194], 13);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -33,6 +33,17 @@ function show_map_div(id_name){
     }
 
 
+function jummp_to_toytab(){
+    var toy_array = ["#jump-to-toy1", "#jump-to-toy2", "#jump-to-toy3"];
+    $.each(toy_array, function(index, toy_id){
+        var accordion_id = '#toy' + toy_id.slice(-1) + '-accordion' ;
+        $(toy_id).on('click',function(){
+            $(".menu .item[data-tab='products-page'").tab('change tab', 'products-page')
+            $(accordion_id).accordion('open', 0)
+        });
+    });
+};
+
 function others(){
     $('.ui.menu .item').tab();
     $('.ui.accordion').accordion();
@@ -44,6 +55,9 @@ function others(){
     // Initialize the modal
     $('.ui.modal').modal();
 
+
+
+
     // Show the modal when the trigger is clicked
     $("#toy1-modal-trigger, #toy2-modal-trigger,#toy3-modal-trigger,#toy4-modal-trigger").each(function(){
         $(this).on('click',function(){
@@ -53,30 +67,8 @@ function others(){
         });
     })
 
-        //click button of toy1 in homepage  ---> then jump(change) to toy3 products-tab ---> and open this accordion of toy1
-    $("#jump-to-toy1").each(function(){
-        $(this).on('click',function(){
-            $(".menu .item[data-tab='products-page'").tab('change tab', 'products-page')
-            $('#toy1-accordion').accordion('open', 0)
-        });
-    });
-
-    // jump to toy2
-    $("#jump-to-toy2").each(function(){
-        $(this).on('click',function(){
-            $(".menu .item[data-tab='products-page'").tab('change tab', 'products-page')
-            $('#toy2-accordion').accordion('open', 0)
-        });
-    });
-
-
-    //jump to toy3
-    $("#jump-to-toy3").each(function(){
-        $(this).on('click',function(){
-            $(".menu .item[data-tab='products-page'").tab('change tab', 'products-page')
-            $('#toy3-accordion').accordion('open', 0)
-        });
-    });
+    //click button of toy1 in homepage  ---> then jump(change) to toy3 products-tab ---> and open this accordion of toy1
+    jummp_to_toytab();
 
 
     //click buy button, change to products tab without any accordion open.
@@ -106,15 +98,7 @@ $(function(){
         others();
     });
 
-    loadPartial('content_2nd_version').then(function() {
-        var source = $('.content_tpl').html();
-        var template = Handlebars.compile(source);
-        var data = {};
-        var html = template(data);
-        $('#content_container').html(html);
-        others();
-        show_map_div('map_computer');
-    });
+
 
     loadPartial('mobile_content_2nd_version').then(function() {
         var source1 = $('.m_content_tpl').html();
@@ -123,11 +107,22 @@ $(function(){
         var data = {};
         var html = template1(data);
         $('#m_content_container').html(html);
-
         others();
-        show_map_div('map_mobile');
+        show_map('map_mobile');
     });
 
+
+
+    loadPartial('content_2nd_version').then(function() {
+
+        var source = $('.content_tpl').html();
+        var template = Handlebars.compile(source);
+        var data = {};
+        var html = template(data);
+        $('#content_container').html(html);
+        others();
+        show_map('map_computer');
+    });
 
 
 
