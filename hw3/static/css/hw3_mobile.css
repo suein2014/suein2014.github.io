@@ -1,9 +1,13 @@
-  @media only screen and (max-width: 600px) {
-    #map_computer {
-      display: none;
-    }
 
-    #map_mobile {
-      display: block;
+    /* Style for screens smaller than 600 pixels */
+    @media only screen and (max-width: 600px) {
+        .ui.top.fixed.menu {
+            height: 50px; /* adjust height for smaller screens */
+        }
+
+        .ui > .row h3.header {
+            margin-bottom: 0;
+            margin-top: 1.5rem;
+        }
+
     }
-  }

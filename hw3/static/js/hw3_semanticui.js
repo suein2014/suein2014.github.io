@@ -45,7 +45,6 @@
     //function to show the map
     function show_map(id_name){
         var map = L.map(id_name).setView([37.7749, -122.4194], 13);
-        //map.invalidateSize();
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
@@ -54,7 +53,6 @@
 
         // when change to the tab: location-page
         $('a[data-tab="location-page"]').on('click', function() {
-            map.invalidateSize(); //for mobile side  refresh
           // get the current position for user
           if ("geolocation" in navigator) {
             navigator.geolocation.getCurrentPosition(function(position) {
@@ -70,7 +68,7 @@
               marker.bindPopup("You are here!").openPopup();
             });
             //IMPORTANT: update the layout when container size changed
-            map.invalidateSize();  //for computer side refresh
+            map.invalidateSize();  //for refresh
           } else {
             alert("Geolocation is not supported by your browser.");
           }
@@ -91,7 +89,7 @@
         });
     };
 
-    //Functions to do other things: Change tab,  Show side bar, Modal, etc
+    //Functions to do all other things: Change tab,  Show side bar, Modal, etc
     function others(){
         $('.ui.menu .item').tab();
         $('.ui.accordion').accordion();
@@ -127,7 +125,7 @@
     }
 
 
-    //load
+    //Fucntion to load template asynchronously.
     var load_partial = async function(name) {
       var html = await $.ajax({url:'partials/' + name + '.html',type:'GET'});
       Handlebars.registerPartial(name, html);

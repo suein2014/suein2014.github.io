@@ -4,18 +4,6 @@
     }
 
 
-    /* Style for screens smaller than 768 pixels */
-    @media only screen and (max-width: 768px) {
-      .ui.top.fixed.menu {
-        height: 50px; /* adjust height for smaller screens */
-      }
-    }
-
-    .ui > .row h3.header {
-        margin-bottom: 0;
-        margin-top: 4rem;
-    }
-
     .ui > .row .ui.item.menu {
         border: none;
     }
@@ -68,15 +56,14 @@
     }
 
 
-   #map_computer {
-    height: 28.6rem;
-    width: 100%;
-    position: relative;
-  }
+    #map_computer {
+        height: 28.6rem;
+        width: 100%;
+        position: relative;
+   }
 
-  #map_mobile {
-    height: 28.6rem;
-    width: 100%;
-   /*display: none;*/
-  }
+   #map_mobile {
+        height: 28.6rem;
+        width: 100%;
+   }
 
