@@ -36,41 +36,6 @@ function show_map_div(id_name){
 
 
 
-//
-//function show_map_mobile(){
-//        var mobile_map = L.map('map_mobile').setView([37.7749, -122.4194], 13);
-//
-//        // add a map layer
-//        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//          attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
-//          maxZoom: 18
-//        }).addTo(mobile_map);
-//
-//        // when change to the tab: location-page
-//        $('a[data-tab="location-page"]').on('click', function() {
-//          // get the current position for user
-//          if ("geolocation" in navigator) {
-//            navigator.geolocation.getCurrentPosition(function(position) {
-//              // set it as map center
-//              mobile_map.setView([position.coords.latitude, position.coords.longitude], 13);
-//
-//              // show position data in the tab title.
-//              $('a[data-tab="location-page"]').text('Location (' + mobile_map.getCenter().toString() + ')');
-//              var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(mobile_map);
-//              marker.bindPopup("You are here!").openPopup();
-//            });
-//            //IMPORTANT: update the layout when container size changed
-//            mobile_map.invalidateSize();
-//          } else {
-//            alert("Geolocation is not supported by your browser.");
-//          }
-//        });
-//
-//}
-
-
-
-
 function others(){
     $('.ui.menu .item').tab();
     $('.ui.accordion').accordion();
@@ -132,16 +97,6 @@ var loadPartial = async function(name) {
   Handlebars.registerPartial(name, html);
 };
 
-function add_type_tpl(){
-    var desk_div = '<div id="map_computer"></div>';
-    var mobile_div = '<div id="map_mobile"></div>';
-    var type_div = !navigator.userAgentData.mobile ? desk_div : mobile_div;
-    console.log(type_div);
-    $('#type_container').html(type_div);
-}
-
-
-
 
 $(function(){
     loadPartial('nav_data').then(function() {
@@ -166,8 +121,6 @@ $(function(){
         show_map_div('map_computer');
         show_map_div('map_mobile');
     });
-
-
 });
 
 
