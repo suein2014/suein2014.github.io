@@ -160,7 +160,7 @@ $(function(){
         var data = {};
         var html = template(data);
         $('#content_container').html(html);
-        var html = template1(data);
+        var html = template(data);
         $('#m_content_container').html(html);
         others();
         show_map_div('map_computer');
