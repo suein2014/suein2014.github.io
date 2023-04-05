@@ -48,7 +48,9 @@
     }
 
 
-
+    strong {
+      font-weight: bold;
+    }
 
     footer {
         padding-top: 2rem;
