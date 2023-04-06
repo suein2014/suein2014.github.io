@@ -57,14 +57,15 @@
               // set it as map center
               map.setView([position.coords.latitude, position.coords.longitude], 13);
 
-              // show position data in the tab title.
+              // show position data in the title.
 //              $('a[data-tab="location-page"]').text('Location (' + map.getCenter().toString() + ')');
+              $('#map_computer, #map_mobile').prev('h2').text('Location Page - ' + map.getCenter().toString());
 
               // add a marker, mark user's position
               var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
 
 
-              marker.bindPopup("You are here!( " + map.getCenter().toString() + ')').openPopup();
+              marker.bindPopup("You are here!").openPopup();
             });
             //IMPORTANT: update the layout when container size changed
             map.invalidateSize();  //for refresh
