@@ -40,8 +40,6 @@
     });
 
 
-
-
     //function to show the map
     function show_map(id_name){
         var map = L.map(id_name).setView([37.7749, -122.4194], 13);
@@ -60,12 +58,13 @@
               map.setView([position.coords.latitude, position.coords.longitude], 13);
 
               // show position data in the tab title.
-              $('a[data-tab="location-page"]').text('Location (' + map.getCenter().toString() + ')');
+//              $('a[data-tab="location-page"]').text('Location (' + map.getCenter().toString() + ')');
 
               // add a marker, mark user's position
               var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
 
-              marker.bindPopup("You are here!").openPopup();
+
+              marker.bindPopup("You are here!( " + map.getCenter().toString() + ')').openPopup();
             });
             //IMPORTANT: update the layout when container size changed
             map.invalidateSize();  //for refresh
