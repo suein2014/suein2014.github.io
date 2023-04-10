@@ -43,6 +43,7 @@
     //function to show the map
     function show_map(id_name){
         var map = L.map(id_name).setView([37.7749, -122.4194], 13);
+        map.invalidateSize();  //for refresh
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
@@ -56,6 +57,7 @@
             navigator.geolocation.getCurrentPosition(function(position) {
               // set it as map center
               map.setView([position.coords.latitude, position.coords.longitude], 13);
+              map.invalidateSize();  //for refresh
 
               // show position data in the title.
 //              $('a[data-tab="location-page"]').text('Location (' + map.getCenter().toString() + ')');
@@ -68,7 +70,7 @@
               marker.bindPopup("You are here!").openPopup();
             });
             //IMPORTANT: update the layout when container size changed
-            map.invalidateSize();  //for refresh
+
           } else {
             alert("Geolocation is not supported by your browser.");
           }
