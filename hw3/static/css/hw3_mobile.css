@@ -10,13 +10,10 @@
             margin-top: 1.5rem;
         }
 
-
-        /*.ui.container {
-              margin-left: .5rem !important;
-              padding-left: 1.5rem !important;
-        }*/
-
+         body{
+            width:96%;
+         }
         .pusher{
-            padding-left: 2rem !important;
+            padding-left: 1rem !important;
         }
     }
