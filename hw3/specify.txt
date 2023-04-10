@@ -1,0 +1,114 @@
+Homework 3 (2023.4)
+
+Complete this homework with two frameworks.
+
+1. Use Semantic UI framework:
+
+Files:
+ - html:
+    - entrance html : bi.html (bootstrap index)
+    - content for computer: partials/content.html
+    - content for mobile: partials/mobile_content.html
+    - nav for both: nav_data.html
+ - js:
+    - hw3_semanticui.js
+    - semanticui.min.js
+    - jquery_3_6_1.min.js
+ - css:
+    - hw3_semanticui.css
+    - hw3.computer.css
+    - hw3.mobile.css
+    - online semantic.min.css (V2.4.1)
+
+others (check codes for version):
+    - map showing
+        - online leftlet.js (V1.7.1)
+        - online leftlet.css (V1.7.1)
+    - template engine, for include partial template.
+        - online handlebar.js (V4.7.7)
+
+
+
+
+
+2. Use Bootstrap 5 Framework:
+Files:
+ - html and entrance: si.html(semanticUI index)
+ - js:
+    - online bootstrap 5 (V5.1.0)
+    - online jquery (V3.6.0)
+    - hw3_bi.js
+ -css:
+    - online bootstrap 5 (V5.1.0)
+    - hw3_bootstrap.css
+    - carousel.css
+
+ others:
+    -map showing:
+        - online leaflet.js (V1.7.1)
+        - online leaflet.css (V1.7.1)
+
+
+
+
+Homework 3 Details
+--------------------------
+Due Monday by 11:59pm Points 15 Submitting a text entry box or a website url Available Mar 7 at 8am - May 15 at 11:59pm
+Homework 3
+Objectives:
+You understood and are able to use Bootstrap or Semantic UI to create a web app for mobile devices and the application of Geolocation.
+
+NOTE: This assignment will be due only at the end of the next topic (Topic 6)! But start as soon as you can - next topic is when we will learn about Geolocation techniques, WURFL (Databases), Standalone, and XHTML-MP!
+
+Big Tip
+Remember to always use https:// when referring to external resources (jQuery, CSS, JavaScript file of an API, etc.)
+
+Situation:
+You will find your starting page in the homework3 folder that you will find among the files/folders you downloaded for this course. The name of the starting page is index.html - this file contains the main content of the first page. You can copy this file to a folder in your computer that you will be using to develop the assignment.
+
+The idea is for you to use one of the frameworks learned (Bootstrap or Semantic UI) to make that page look more mobile-app-style.
+
+Besides that, you need to create 4 extra pages:
+
+a Contact Us page:
+you will show the email address, telephone, address, URL to the facebook page (a fake one, of course) of the company
+you will also provide a small form to request the name, email address, and a comment area, with a submit button so the company can collect some information from the user. I do not expect to see you developing/writing any program that will receive the data of that form! I just need to see the form created that is mobile ready, using the new HTML 5 input elements and other tags to make your form accessible - Tip: remember to use the label tag for your input tags in the form!
+homework 3 - screen imagea Products page:
+this page will show a list of at least 3 toys – picture and some description – this list should be collapsible so the user will open it by clicking on the name of the toy to see the picture and the description of the toy (all created by you) – see picture shown here for an idea on how this page should be shown.
+Tips: the collapsible in Semantic UI is the Accordion module we studied and for collapsible with Bootstrap, you can take a look at the W3Schools Bootstrap CollapsibleLinks to an external site..
+a Location page
+this page will be completed after you study the material on Topic 6 (about Geolocation) - you will show the current latitude and longitude of the user written on that page.
+an Extra page
+in this page you will describe 3 capabilities offered by WURFL database (it's not the characteristics of WURFL or what is WURFL), it's related to the capabilities that a developer, with access to WURFL, can use and test against the device that is requesting the application - for example, there is a capability called brand_name that will give the brand of the device - you can style that page as a definition list, or a simple table using the styles of the Framework of your choice
+You should include, in all the pages, a group of buttons (navigation) so the user can go to any of the pages (a kind of navigation bar) – it can be placed at the top or bottom of the page but you need to make sure that when the page is scrolled down (or up, in case you put the navigation bar at the bottom), the user will still see that navigation bar.
+
+
+Extra Credit for the location page (+2 points):
+You will present a map with the current location of the user - the location of the user will be automatically retrieved (Tip: if you were able to write the code to present the latitude and longitude, then you will have the parameters necessary to present the map)
+The extra credit will be considered complete if you show the map showing the location of the user and the map opens correctly without the need of refreshing the page, clicking of button, or anything like that.
+
+
+How to submit your work:
+Create your pages (or one page if you are developing as an SPA = Single Page Application) and upload to your web server account. Remember to upload the images you are using (for the products page) maintaining the same structure you used in your computer.
+Test your pages especially in some mobile devices to see how they look.
+Go to Canvas, click on the Assignments link, then click on the Homework 3 link, read the instructions, click on the button to type, in the space provided, the URL to the homepage (index.html) and click on the Submit button again - when I use the URL you provided I should see the front page (the index.html) that will have the navigation bar requested so I can navigate to the other pages you built
+Note: you can choose the 3 pictures for the toys – prefer small pictures, preferably png format - you can search in Google for "free png images" and you might find some websites such as:
+PNG TreeLinks to an external site.
+PNG images in PixabayLinks to an external site.
+PNG images at FreepickLinks to an external site.
+
+
+Grading Criteria:
+Your HTML code is valid according to the latest standards - 0.5 points
+The framework was used correctly.
+There is a navigation bar and it shows in all  pages (home, contact, products, location, and extra pages), the navigation bar stays fixed at the top or bottom even if I scroll the page up or down - 2 points
+There is a header in all the pages - 1 point
+The form in the contact page is correctly coded and using features to enhance accessibility - 2 points
+The files necessary to use the framework of your choice were correctly coded in your HTML and they are being correctly downloaded when opening the page because you used the https:// URL – 2 points
+The products page presented at least 3 toys and each toy was presented using a collapsible element and when I open the collapsible element I can see the image and a brief description of the toy - 2 points
+The Geolocation is working correctly (showing latitude and longitude) - 3 points
+The capabilities listed are real WURFL capabilities and you wrote a basic explanation about the capabilities -  2 points
+The pages opened correctly in mobile devices and also in desktop and I do not get any NOT FOUND or FORBIDDEN message – 0.5 points
+You will see the extra points applied to the points of your assignment!
+
+If you submit late, and if the extra credit is working as requested, you will see the extra credit points added to your assignment but deductions will be applied (10% deduction for each week the assignment is late)!
