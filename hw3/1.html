@@ -4,8 +4,6 @@
         <meta charset="UTF-8">
         <title>选项卡</title>
         <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
     </head>
     <body>
         <div class="ui top attached tabular menu">
@@ -13,40 +11,85 @@
             <a href="" class="item active" data-tab="english">英语</a>
             <a href="" class="item" data-tab="math">数学</a>
             <div class="right item">
-                <button class="ui icon button">
+                <div class="ui simple dropdown icon button">
                     <i class="bars icon"></i>
-                </button>
+                    <div class="menu">
+                        <a href="" class="item" data-tab="yuWen">语文</a>
+                        <a href="" class="item active" data-tab="english">英语</a>
+                        <a href="" class="item" data-tab="math">数学</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="ui bottom attached tab segment" data-tab="yuWen">语文语文语文</div>
         <div class="ui bottom attached tab active segment" data-tab="english">英语英语英语</div>
         <div class="ui bottom attached tab segment" data-tab="math">数学数学数学</div>
-        <script>
-            $(document).ready(function() {
-                $(".tabular.menu .item").tab();
 
-                // Initialize the mobile menu
-                $(".ui.top.attached.tabular.menu").clone().appendTo(".ui.sidebar");
-                $(".ui.sidebar .menu").removeClass("attached").removeAttr("style");
-                $(".ui.sidebar").sidebar({
-                    transition: "overlay"
-                });
-                $(".ui.sidebar .item").tab({
-                    onVisible: function() {
-                        $(".ui.sidebar").sidebar("hide");
-                    }
-                });
-                $(".ui.icon.button").click(function() {
-                    $(".ui.sidebar").sidebar("toggle");
-                });
-            });
-        </script>
-
-        <div class="ui sidebar"></div>
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--    <head>-->
+<!--        <meta charset="UTF-8">-->
+<!--        <title>选项卡</title>-->
+<!--        <link href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css" rel="stylesheet">-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <div class="ui top attached tabular menu">-->
+<!--            <a href="" class="item" data-tab="yuWen">语文</a>-->
+<!--            <a href="" class="item active" data-tab="english">英语</a>-->
+<!--            <a href="" class="item" data-tab="math">数学</a>-->
+<!--            <div class="right item">-->
+<!--                <button class="ui icon button">-->
+<!--                    <i class="bars icon"></i>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="ui bottom attached tab segment" data-tab="yuWen">语文语文语文</div>-->
+<!--        <div class="ui bottom attached tab active segment" data-tab="english">英语英语英语</div>-->
+<!--        <div class="ui bottom attached tab segment" data-tab="math">数学数学数学</div>-->
+<!--        <script>-->
+<!--            $(document).ready(function() {-->
+<!--                $(".tabular.menu .item").tab();-->
+
+<!--                // Initialize the mobile menu-->
+<!--                $(".ui.top.attached.tabular.menu").clone().appendTo(".ui.sidebar");-->
+<!--                $(".ui.sidebar .menu").removeClass("attached").removeAttr("style");-->
+<!--                $(".ui.sidebar").sidebar({-->
+<!--                    transition: "overlay"-->
+<!--                });-->
+<!--                $(".ui.sidebar .item").tab({-->
+<!--                    onVisible: function() {-->
+<!--                        $(".ui.sidebar").sidebar("hide");-->
+<!--                    }-->
+<!--                });-->
+<!--                $(".ui.icon.button").click(function() {-->
+<!--                    $(".ui.sidebar").sidebar("toggle");-->
+<!--                });-->
+<!--            });-->
+<!--        </script>-->
+
+<!--        <div class="ui sidebar"></div>-->
+
+<!--        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<!--        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>-->
+
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>-->
+<!--    </body>-->
+<!--</html>-->
 
 
 
