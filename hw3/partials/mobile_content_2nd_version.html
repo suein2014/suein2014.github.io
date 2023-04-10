@@ -1,5 +1,4 @@
-<article class="ui segment grid tab active" data-tab="home-page"
-         xmlns="http://www.w3.org/1999/html">
+<article class="ui segment grid tab active" data-tab="home-page">
         <h2 hidden> Home Page </h2>
         <section class="ui center aligned container">
             <h2> Love, safe, fun</h2>
@@ -59,7 +58,7 @@
                     <!-- Modal -->
                     <div id="toy1-modal" class="ui modal bigimg-custom-size">
                       <div class="image content">
-                        <img class="image" src="./static/img/lego_police_large.png">
+                        <img class="image" alt="lego police set" src="./static/img/lego_police_large.png">
                       </div>
                     </div>
                 </li>
@@ -97,7 +96,7 @@
                         <!-- Modal -->
                         <div id="toy2-modal" class="ui modal bigimg-custom-size">
                           <div class="image content">
-                            <img class="image" src="./static/img/playdoh_large.png">
+                            <img class="image" alt="playdoh set" src="./static/img/playdoh_large.png">
                           </div>
                         </div>
                     </li>
@@ -136,7 +135,7 @@
                         <!-- Modal -->
                         <div id="toy3-modal" class="ui modal bigimg-custom-size">
                           <div class="image content">
-                            <img class="image" src="./static/img/train_large.png">
+                            <img class="image" alt="wooden train set" src="./static/img/train_large.png">
                           </div>
                         </div>
                     </li>
@@ -174,7 +173,7 @@
                     <!-- Modal -->
                     <div id="toy4-modal" class="ui modal bigimg-custom-size">
                       <div class="image content">
-                        <img class="image" src="./static/img/kidkraft_kitchen_large.png">
+                        <img class="image" alt="kidkraft kitchen set" src="./static/img/kidkraft_kitchen_large.png">
                       </div>
                     </div>
                 </li>
@@ -192,9 +191,48 @@
     <div id="map_mobile" ></div>
 </article>
 <article class="ui segment tab" data-tab="extra-page">
-    <h2>Extra Page</h2>
-    <p>Get in touch with me on the contact page.</p>
-
+    <h2>WURFL Capabilities</h2>
+    <table class="ui celled table">
+        <thead>
+            <tr>
+              <th>Capabilities</th>
+              <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                  <a href="https://www.scientiamobile.com/capabilities/?search=is_ios" target="_blank" rel="noopener noreferrer">
+                      <strong>is_ios</strong>
+                  </a>
+              </td>
+              <td>
+                  True if device runs any version of iOS. This virtual capability relies on the device_os.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <a href="https://www.scientiamobile.com/capabilities/?search=advertised_browser" target="_blank" rel="noopener noreferrer">
+                      <strong>advertised_browser</strong>
+                  </a>
+              </td>
+              <td>
+                  Infers the name of the browser based on user-agent string analysis.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <a href="https://www.scientiamobile.com/capabilities/?search=form_factor" target="_blank" rel="noopener noreferrer">
+                      <strong>form_factor</strong>
+                  </a>
+              </td>
+              <td>
+                  Returns the device's form factor based on categorization provided by multiple capability tests.
+                  Possible Values: Desktop, Tablet, Smartphone, Feature Phone, Smart-TV, Robot, Other non-Mobile, Other Mobile
+              </td>
+            </tr>
+        </tbody>
+   </table>
 
 </article>
 <article class="ui segment tab" data-tab="contact-page">

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>ABC Toys Bootstrap</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+
+<!--      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">-->
+<!--      <link href="./static/css/hw3_bi.css" rel="stylesheet" media="all">-->
+<!--        <link href="./static/css/hw3_bootstrap.css" rel="stylesheet" media="all">-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+<body>
+        <header>
+            <nav class="navbar navbar-expand-md fixed-top bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">ABC Toys</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse" >
+                      <ul class="nav nav-tabs me-auto mb-2 mb-md-0" >
+                        <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#product">Product</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#location">Location</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#extra">Extra</a></li>
+                        <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#contact">Contact</a></li>
+                      </ul>
+                  </div>
+                </div>
+            </nav>
+
+        </header>
+        <main class="container">
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3>Home</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div id="product" class="tab-pane fade">
+              <h3>Product</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div id="location" class="tab-pane fade">
+              <h3>Location</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </div>
+            <div id="extra" class="tab-pane fade">
+                <h3> WURFL Capabilities</h3>
+                <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Capabilities</th>
+                    <th scope="col">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                   <th>
+                        <a href="https://www.scientiamobile.com/capabilities/?search=is_ios" target="_blank" rel="noopener noreferrer">
+                            is_ios
+                        </a>
+                    </th>
+                    <td>True if device runs any version of iOS. This virtual capability relies on the device_os.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                        <a href="https://www.scientiamobile.com/capabilities/?search=advertised_browser" target="_blank" rel="noopener noreferrer">
+                            advertised_browser
+                        </a>
+                    </th>
+                    <td>Infers the name of the browser based on user-agent string analysis.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                          <a href="https://www.scientiamobile.com/capabilities/?search=form_factor" target="_blank" rel="noopener noreferrer">
+                              form_factor
+                          </a>
+                    </th>
+                    <td colspan="2">
+                      Returns the device's form factor based on categorization provided by multiple capability tests.
+                      Possible Values: Desktop, Tablet, Smartphone, Feature Phone, Smart-TV, Robot, Other non-Mobile, Other Mobiles
+                    </td>
+                  </tr>
+                </tbody>
+                </table>
+            </div>
+            <div id="contact" class="tab-pane fade">
+              <h3 hidden>Contact</h3>
+              <article class="container my-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <h2>Our Information</h2>
+                            <ul class="list-unstyled">
+                                <li><strong>Email:</strong> csmadmission@smccd.edu</li>
+                                <li><strong>Phone:</strong> (650)574-6161</li>
+                                <li><strong>Address:</strong> 1700 W Hillsdale Blvd San Mateo, CA 94402</li>
+                                <li><strong>Facebook:</strong> <a href="#">facebook.com/fakecompany</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h2>Contact Us</h2>
+                            <p>Please fill out the form below to get in touch with us.</p>
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment">Comment</label>
+                                    <textarea class="form-control" id="comment" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </article>
+            </div>
+          </div>
+
+          <hr class="featurette-divider">
+          <!-- FOOTER -->
+          <footer class="container">
+            <p>&copy; 2017–2023 ABC Toys, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          </footer>
+
+        </main>
+<!--    </div>-->
+
+</body>
+</html>
