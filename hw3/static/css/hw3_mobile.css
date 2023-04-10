@@ -1,7 +1,9 @@
 
     /* Style for screens smaller than 600 pixels */
     @media only screen and (max-width: 600px) {
-        .ui.top.fixed.menu {
+         /*nav style*/
+         .ui.top.attached.fixed.menu{
+            margin-top: 0rem;
             height: 3.6rem; /* adjust height for smaller screens */
         }
 
@@ -13,7 +15,13 @@
          body{
             width:96%;
          }
+
         .pusher{
             padding-left: 1rem !important;
+        }
+
+        /*for pushable-div not covered by nav*/
+        .ui.segment[class*="bottom attached"]{
+            margin-top: 3.7rem;
         }
     }
