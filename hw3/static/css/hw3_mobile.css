@@ -10,4 +10,13 @@
             margin-top: 1.5rem;
         }
 
+
+        /*.ui.container {
+              margin-left: .5rem !important;
+              padding-left: 1.5rem !important;
+        }*/
+
+        .mobile.only.row{
+            padding-left: 2rem !important;
+        }
     }
