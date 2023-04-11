@@ -26,13 +26,14 @@
             navigator.geolocation.getCurrentPosition(function(position) {
               // set it as map center
               map.setView([position.coords.latitude, position.coords.longitude], 13);
-              map.invalidateSize();
+
               $('#mapid').prev('h2').text('Location - ' + map.getCenter().toString());
               // add a marker, mark user's position
               var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
               marker.bindPopup("You are here!").openPopup();
             });
             //IMPORTANT: update the layout when container size changed
+            map.invalidateSize();
           } else {
             alert("Geolocation is not supported by your browser.");
           };
