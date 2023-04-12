@@ -6,7 +6,7 @@ Complete this homework with two frameworks.
 
 Files:
  - html:
-    - entrance html : bi.html (bootstrap index)
+    - entrance html : si.html (semanticUI index page)
     - content for computer: partials/content.html
     - content for mobile: partials/mobile_content.html
     - nav for both: nav_data.html
@@ -33,7 +33,7 @@ others (check codes for version):
 
 2. Use Bootstrap 5 Framework:
 Files:
- - html and entrance: si.html(semanticUI index)
+ - html and entrance: bi.html (bootstrap index page)
  - js:
     - online bootstrap 5 (V5.1.0)
     - online jquery (V3.6.0)
