@@ -69,3 +69,27 @@
         width: 100%;
    }
 
+
+    .ui.center.aligned.container h2 {
+        color: #66cc00;
+    }
+
+    /*-- define Rocher font --*/
+    @font-face {
+      font-family: 'Rocher';
+      src: url(../fonts/RocherColorGX.woff2);
+    }
+    .ui.large.header {
+      font-family: 'Rocher';
+      font-size: 3.6rem;
+    }
+
+    /*-- define the palette --*/
+    @font-palette-values --Mint {
+      font-family: Rocher;
+      base-palette: 7;
+    }
+    /* use the palette */
+    .mint {
+      font-palette: --Mint;
+    }
