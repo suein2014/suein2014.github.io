@@ -27,7 +27,8 @@
     </header>
      <main>
          <article class="container">
-              <label for="bgc-select">Select a background color:</label>
+             <h2 hidden>changing background-image</h2>
+              <label for="bgc-select">Select a background-image:</label>
               <select id="bgc-select">
                    <option value="img/lightblue.jpg">Light Blue</option>
                    <option value="img/lightgold.jpg">Light Gold</option>
@@ -84,13 +85,6 @@
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('service-worker.js');
         }
-
-<!--        document.querySelector('#show').addEventListener('click', () => {-->
-<!--          const iconUrl = document.querySelector('select').selectedOptions[0].value;-->
-<!--          let imgElement = document.createElement('img');-->
-<!--          imgElement.src = iconUrl;-->
-<!--          document.querySelector('#container').appendChild(imgElement);-->
-<!--        });-->
       </script>
 
 </body>
