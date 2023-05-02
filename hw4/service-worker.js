@@ -1,7 +1,8 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-const PRECACHE = 'cnit133m-v1';
+
+const PRECACHE = 'myHW4';
 const RUNTIME = 'runtime';
 
 // A list of local resources to be cached.
@@ -37,6 +38,7 @@ self.addEventListener('activate', event => {
       }));
     }).then(() => self.clients.claim())
   );
+
 });
 
 // The fetch handler serves responses for same-origin resources from a cache.

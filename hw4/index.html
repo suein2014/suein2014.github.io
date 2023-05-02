@@ -22,19 +22,29 @@
     <link rel="icon" href="img/favicon.ico">
 </head>
 <body>
-    <header>
-        <h1 class="text-center align-middle"> XiaoyanTian's HW4 - PWA</h1>
-    </header>
-     <main>
-         <article class="container mb-4">
-             <h2 hidden>changing background-image</h2>
-              <label for="bgc-select">Select a background-image:</label>
-              <select id="bgc-select">
-                   <option value="img/lightblue.jpg">Light Blue</option>
-                   <option value="img/lightgold.jpg">Light Gold</option>
-              </select>
-         </article>
+    <header data-bs-theme="dark">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand">XYT HW4</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" data-bs-dismiss="collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
 
+              <div style="display: flex; justify-content: flex-end;">
+                  <label for="bgc-select">Select a background-image: &nbsp;</label>
+                  <select id="bgc-select">
+                        <option value=""> </option>
+                       <option value="img/lightblue.jpg">Light Blue</option>
+                       <option value="img/lightgold.jpg">Light Gold</option>
+                  </select>
+              </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+     <main>
          <article  class="container">
             <h2>PWA characteristics</h2>
             <p>A Progressive Web App (PWA) is a web application that provides a native-like experience to users, using modern web capabilities to deliver an app-like experience.</p>
