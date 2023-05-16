@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3fba2541-6043-4ff8-a789-07acb6ccadb8" name="Changes" comment="update imgs name">
+      <change afterPath="$PROJECT_DIR$/st/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/st/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/st/3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/st/cordova.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/st/flutter_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/st/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/st/react_logo.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/st/st.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/bi.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/bi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/partials/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/partials/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hw3/partials/mobile_content.html" beforeDir="false" afterPath="$PROJECT_DIR$/hw3/partials/mobile_content.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KpMFdJscBNs5xT0at8UM0fkpHM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/xiaoyan/works/suein2014.github.io/hw4&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.EditorConfig&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/Users/xiaoyan/works/suein2014.github.io/hw3/partials/mobile_content.html&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hw4" />
+      <recent name="$PROJECT_DIR$/hw3" />
+      <recent name="$PROJECT_DIR$/hw3/static/js" />
+      <recent name="$PROJECT_DIR$/hw2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hw4/img" />
+      <recent name="$PROJECT_DIR$/hw3/static/css" />
+      <recent name="$PROJECT_DIR$/hw3/static/fonts" />
+      <recent name="$PROJECT_DIR$/hw3" />
+      <recent name="$PROJECT_DIR$/hw3/partials" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3fba2541-6043-4ff8-a789-07acb6ccadb8" name="Changes" comment="" />
+      <created>1674666968240</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674666968240</updated>
+    </task>
+    <task id="LOCAL-00001" summary="update animation for letters grow">
+      <created>1676276921020</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676276921020</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update article">
+      <created>1676282414571</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676282414571</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove css }">
+      <created>1676282578502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676282578502</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update js file for animation.">
+      <created>1676399620004</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676399620004</updated>
+    </task>
+    <task id="LOCAL-00005" summary="complete moving to grid.">
+      <created>1677781763771</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677781763771</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update imgs name">
+      <created>1677905464141</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677905464141</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="update animation for letters grow" />
+    <MESSAGE value="update article" />
+    <MESSAGE value="remove css }" />
+    <MESSAGE value="update js file for animation." />
+    <MESSAGE value="complete moving to grid." />
+    <MESSAGE value="update imgs name" />
+    <option name="LAST_COMMIT_MESSAGE" value="update imgs name" />
+  </component>
+</project>
