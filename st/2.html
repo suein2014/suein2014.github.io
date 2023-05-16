@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table with Fixed-Width Cells</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    td:first-child {
+      font-weight: bold;
+    }
+    .small {
+      height: 50px;
+    }
+    .medium {
+      height: 100px;
+    }
+    .large {
+      height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Month</th>
+        <th class="small">Sales</th>
+        <th class="medium">Expenses</th>
+        <th class="large">Profit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>January</td>
+        <td class="small">$10,000</td>
+        <td class="medium">$5,000</td>
+        <td class="large">$5,000</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td class="small">$12,000</td>
+        <td class="medium">$6,000</td>
+        <td class="large">$6,000</td>
+      </tr>
+      <tr>
+        <td>March</td>
+        <td class="small">$14,000</td>
+        <td class="medium">$7,000</td>
+        <td class="large">$7,000</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

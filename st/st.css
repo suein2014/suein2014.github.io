@@ -1,0 +1,51 @@
+     main {
+        margin-top:4rem;
+    }
+
+    h2, h3 {
+        font-family: Courier New;
+        font-weight:bold;
+    }
+
+
+    /* Adjust table header height */
+    .table {
+      font-family: Courier New;
+      /*font-size:auto;*/
+    }
+
+
+    .redbold {
+        color: #CC0000;
+        font-weight:bold;
+    }
+    .blackbold {
+        font-weight:bold;
+    }
+    .lightgrey{
+        color: #A0A0A0;
+    }
+
+    table img {
+      max-width: 15%;
+      max-height: 15%;
+    }
+
+
+
+    /* Set background color for table header cells */
+    .table thead th:nth-child(1) {
+      background-color: #E0E0E0;
+    }
+    .table thead th:nth-child(2) {
+      background-color: orange;
+    }
+    .table thead th:nth-child(3) {
+      background-color: #80FF00;
+    }
+    .table thead th:nth-child(4) {
+      background-color: yellow;
+    }
+
+
+    a:link { text-decoration: none;}

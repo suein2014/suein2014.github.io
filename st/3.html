@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparison with React-Native and Flutter and PhoneGap">
+    <title>XYT'S Short Task</title>
+<!--    <script>-->
+<!--      // Add a global error event listener early on in the page load, to help ensure that browsers-->
+<!--      // which don't support specific functionality still end up displaying a meaningful message.-->
+<!--      window.addEventListener('error', function(error) {-->
+<!--        if (ChromeSamples && ChromeSamples.setStatus) {-->
+<!--          console.error(error);-->
+<!--          ChromeSamples.setStatus(error.message + ' (Your browser may not support this feature.)');-->
+<!--          error.preventDefault();-->
+<!--        }-->
+<!--      });-->
+<!--    </script>-->
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header data-bs-theme="light">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand">Xiaoyan's Short Task @CIS128</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" data-bs-dismiss="collapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+<!--          <div class="collapse navbar-collapse" id="navbarCollapse">-->
+
+<!--              <div style="display: flex; justify-content: flex-end;">-->
+<!--                  <label for="bgc-select">Select a background-image: &nbsp;</label>-->
+<!--                  <select id="bgc-select">-->
+<!--                        <option value=""> </option>-->
+<!--                       <option value="img/lightblue.jpg">Light Blue</option>-->
+<!--                       <option value="img/lightgold.jpg">Light Gold</option>-->
+<!--                  </select>-->
+<!--              </div>-->
+<!--          </div>-->
+        </div>
+      </nav>
+    </header>
+
+     <main>
+         <article  class="container">
+            <h2>3 Hybrid solutions Comparison</h2>
+             <hr>
+            <table class="table table-striped table-bordered">
+              <thead>
+                    <th scope="col" class="th1"></th>
+                    <th scope="col" class="th2">
+                        <img class="rounded-circle" src="./react_logo.jpeg" alt="React native logo"> React Native
+                    </th>
+                    <th scope="col" class="th3">
+                        <img class="rounded-circle" src="./flutter_logo.png" alt="Flutter logo"> Flutter
+                    </th>
+                    <th scope="col" class="th4">
+                        <img class="rounded-circle" src="./cordova.png" alt="PhoneGap/Cordova logo"> PhoneGap/Cordova
+                    </th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="blackbold">Duration(by maintainer)</td>
+                    <td>2017- </td>
+                    <td>2017- </td>
+                    <td>2015-<span class="redbold">2020</span>(<a target="_blank" rel="noopener noreferrer" href="https://cordova.apache.org/announcements/2020/08/14/goodbye-phonegap.html">bye-link</a>)</td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Maintainer</td>
+                  <td>Facebook</td>
+                  <td>Google</td>
+                  <td>Adobe</td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Language</td>
+                  <td>Javascript</td>
+                  <td>Javascript</td>
+                  <td>Dart</td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Supported Platforms</td>
+                  <td>
+                      <ul>
+                          <li>
+                            <a target="_blank" rel="noopener noreferrer" href="https://reactnative.dev/docs/out-of-tree-platforms">
+                              official info link
+                            </a>
+                          </li>
+                          <li>Mobile(Android/iOS)✅</li>
+                          <li>Web✅</li>
+                          <li><span class="lightgrey">macOS(Experimental)</span></li>
+                          <li>Windows✅</li>
+                          <li>Linux ❌</li>
+                          <li> <span class="blackbold">Others</span>
+                            <ul>
+                                <li>tvOS</li>
+                                <li>watchOS</li>
+                            </ul>
+                          </li>
+                      </ul>
+                  </td>
+                  <td>
+                      <li>
+                          <a target="_blank" rel="noopener noreferrer" href="https://docs.flutter.dev/reference/supported-platforms">
+                              official info link
+                          </a>
+                      </li>
+                      <ul>
+                          <li>Mobile(Android/iOS)✅</li>
+                          <li>Web✅</li>
+                          <li>macOS✅</li>
+                          <li>Windows✅</li>
+                          <li>Linux ✅</li>
+                          <li><span class="blackbold">Others</span>
+                              <ul>
+                                  <li> <span class="lightgrey">Fuchsia(Experimental)</span></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </td>
+                  <td>
+                      <ul>
+                      <li>
+                          <a target="_blank" rel="noopener noreferrer" href="https://cordova.apache.org/docs/en/11.x/guide/support">
+                              official info link
+                          </a>
+                      </li>
+                          <li>Mobile(Android/iOS)✅</li>
+                          <li>Web✅</li>
+                          <li>macOS❌</li>
+                          <li>Windows✅</li>
+                          <li>Linux ❌</li>
+                          <li><span class="blackbold">Others</span>
+                              <ul>
+                                  <li>Windows Phone</li>
+                                  <li>BlackBerry</li>
+
+                                  <li>
+                                      <a target="_blank" rel="noopener noreferrer" href="https://developer.mozilla.org/en-US/docs/Glossary/Firefox_OS">
+                                          Firefox OS
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a target="_blank" rel="noopener noreferrer" href="https://ubports.com">
+                                          Ubuntu Touch
+                                      </a></li>
+                                  <li>
+                                      <a target="_blank" rel="noopener noreferrer" href="https://www.tizen.org">
+                                          Tizen
+                                      </a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Development Cost</td>
+                    <td>Relatively <span class="blackbold">low</span>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>platform-specific APIs</li>
+                        </ul>
+                  </td>
+                    <td><span class="blackbold">Moderate</span>
+                        <ul>
+                            <li>Dart</li>
+                            <li>platform-specific APIs</li>
+                        </ul>
+                  </td>
+                    <td>Relatively <span class="blackbold">low</span>
+                        <ul>
+                            <li>front-end skill(Html+Javascript+CSS)</li>
+                            <li>some native-like user experience skill</li>
+                        </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Running speed</td>
+                  <td>Slightly slower than native apps</td>
+                  <td>Slow</td>
+                  <td>Almost native performance</td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Community and Support</td>
+                    <td>Has a <span class="blackbold">large and active</span> community and support from Facebook</td>
+                    <td>Has a <span class="blackbold">growing</span> community and strong support from Google</td>
+                    <td>Has a <span class="blackbold">moderate</span> community and support</td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Popularity
+                     ( <a target="_blank" rel="noopener noreferrer" href="https://insights.stackoverflow.com/survey/2020#technology-most-loved-dreaded-and-wanted-other-frameworks-libraries-and-tools">
+                          data source
+                      </a>)
+                  </td>
+                  <td>
+                      <ul>
+                          <li>Very popular</li>
+                        <li>According to the 2020 Stack Overflow Developer Survey, <span class="redbold">57.9%</span> of developers reported using React Native for their projects.</li>
+                      </ul>
+                  </td>
+                  <td>
+                      <ul>
+                          <li>Very popular</li>
+                        <li>According to the 2020 Stack Overflow Developer Survey, <span class="redbold">68.8%</span> of developers reported using Flutter for their projects.</li>
+                      </ul>
+                  </td>
+                  <td>
+                      <ul>
+                        <li>Moderately popular</li>
+                        <li>According to the 2020 Stack Overflow Developer Survey, <span class="redbold">28.7%</span> of developers reported using Cordova/PhoneGap for their projects.</li>
+                      </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Satisfaction</td>
+                    <td>
+                      <ul>
+                        <li>High satisfaction</li>
+                        <li>Developers appreciate the large community, rich ecosysem, and access to native features</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>High satisfaction</li>
+                        <li>Developers appreciate the fast development features, customizable UI, and high performance</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>Mixed satisfaction</li>
+                        <li>Some developers appreciate the ease of use and cross-platform capabilities, while others criticize the performance and limitations in accessing native features.</li>
+                      </ul>
+                    </td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Application Examples</td>
+                    <td><span class="blackbold">Facebook</span>, <span class="blackbold">Instagram</span>, SoundCloud, Bloomberg</td>
+                    <td><span class="blackbold">Google Ads</span>, Tencent, Alibaba</td>
+                    <td><span class="blackbold">Wikipedia</span>, Tripcase, The DHS Program</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </article>
+     </main>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="hw4.js"></script>
+<!--      <script>-->
+<!--        if ('serviceWorker' in navigator) {-->
+<!--          navigator.serviceWorker.register('service-worker.js');-->
+<!--        }-->
+<!--      </script>-->
+
+</body>
+</html>
