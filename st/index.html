@@ -24,9 +24,6 @@
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
         <div class="container-fluid">
           <a class="navbar-brand">Xiaoyan's Short Task @CIS128</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" data-bs-dismiss="collapse">
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </div>
       </nav>
     </header>
@@ -38,7 +35,8 @@
             <h3>⭐Detail</h3>
             <table class="table table-striped table-bordered">
               <thead>
-                    <th scope="col" class="th1"></th>
+                <tr>
+                    <th scope="col" ></th>
                     <th scope="col" class="th2">
                         <img class="rounded-circle" src="./react_logo.png" alt="React native logo"> React Native
                     </th>
@@ -48,6 +46,7 @@
                     <th scope="col" class="th4">
                         <img class="rounded-circle" src="./cordova.png" alt="PhoneGap/Cordova logo"> PhoneGap/Cordova
                     </th>
+               </tr>
               </thead>
               <tbody>
                 <tr>
@@ -91,11 +90,9 @@
                       </ul>
                   </td>
                   <td>
-                      <li>
-                          <a target="_blank" rel="noopener noreferrer" href="https://docs.flutter.dev/reference/supported-platforms">
-                              official info link
-                          </a>
-                      </li>
+                      <a target="_blank" rel="noopener noreferrer" href="https://docs.flutter.dev/reference/supported-platforms">
+                          official info link
+                      </a>
                       <ul>
                           <li>Mobile(Android/iOS)✅</li>
                           <li>Web✅</li>
@@ -246,6 +243,7 @@
               <hr>
               <table class="table table-striped table-bordered">
                   <thead>
+                    <tr>
                         <th scope="col" class="th1"></th>
                         <th scope="col" class="th2">
                             <img class="rounded-circle" src="./react_logo.png" alt="React native logo"> React Native
@@ -256,6 +254,7 @@
                         <th scope="col" class="th4">
                             <img class="rounded-circle" src="./cordova.png" alt="PhoneGap/Cordova logo"> PhoneGap/Cordova
                         </th>
+                    </tr>
                   </thead>
                   <tbody>
                     <tr>
@@ -281,7 +280,8 @@
                             </ul>
                         </td>
                     </tr>
-                    <td class="blackbold">Cons</td>
+                    <tr>
+                        <td class="blackbold">Cons</td>
                         <td>
                             <ul>
                                 <li>Steep learning curve for developers</li>
@@ -308,7 +308,6 @@
 
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-     <script src="hw4.js"></script>
       <script>
         if ('serviceWorker' in navigator) {
           navigator.serviceWorker.register('service-worker.js');
