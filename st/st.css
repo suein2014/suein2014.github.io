@@ -49,3 +49,25 @@
 
 
     a:link { text-decoration: none;}
+
+
+
+
+    /* Define the CSS rules for the table cells */
+    table {
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    /* Use CSS pseudo-classes to create bullet points */
+    td:before {
+      content: "•";
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
