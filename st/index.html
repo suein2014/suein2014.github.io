@@ -33,7 +33,7 @@
             <h2>3 Hybrid solutions Comparison</h2>
              <hr>
             <h3>💡 Detail</h3>
-            <table class="table table-striped table-bordered table-responsive">
+            <table class="table table-striped table-hover table-bordered table-responsive">
               <thead>
                 <tr>
                     <th scope="col" ></th>
@@ -44,16 +44,22 @@
                         <img class="rounded-circle" src="./flutter_logo.png" alt="Flutter logo"> Flutter
                     </th>
                     <th scope="col" class="th4">
-                        <img class="rounded-circle" src="./cordova.png" alt="PhoneGap/Cordova logo"> PhoneGap/Cordova
+                        <img class="rounded-circle" src="./cordova.png" alt="PhoneGap/Cordova logo"> Cordova/PhoneGap
                     </th>
                </tr>
               </thead>
               <tbody>
                 <tr>
                   <td class="blackbold">Duration(by maintainer)</td>
+                    <td>2015- </td>
                     <td>2017- </td>
-                    <td>2017- </td>
-                    <td>2015-<span class="redbold">2020</span>(<a target="_blank" rel="noopener noreferrer" href="https://cordova.apache.org/announcements/2020/08/14/goodbye-phonegap.html">bye-link</a>)</td>
+                    <td>
+                        <ul>
+                            <li>2011- (Cordova, open source)</li>
+                            <li>2009-<span class="redbold">2020</span>(PhoneGap <a target="_blank" rel="noopener noreferrer" href="https://cordova.apache.org/announcements/2020/08/14/goodbye-phonegap.html">bye-link</a>)</li>
+                        </ul>
+                    </td>
+
                 </tr>
                 <tr>
                   <td class="blackbold">Maintainer</td>
@@ -141,6 +147,12 @@
                           </li>
                       </ul>
                   </td>
+                </tr>
+                <tr>
+                  <td class="blackbold">Approach to create a cross platform app (Rendering views)</td>
+                  <td>maps its tags with native components of Android and iOS</td>
+                  <td>draw its own components (widgets) on Canvas from the native library</td>
+                  <td>uses WebView as its main component from native library</td>
                 </tr>
                 <tr>
                   <td class="blackbold">Development Cost</td>
@@ -234,6 +246,26 @@
                     </td>
                 </tr>
                 <tr>
+                  <td class="blackbold">Cost Efficiency</td>
+                    <td colspan="3">
+                        <ul>
+                            <li>Cost for singel app:
+                                <a target="_blank" rel="noopener noreferrer" href="https://buildfire.com/app-development-costs-difference">
+                                    $50K - $ 1000K
+                                </a>
+                            </li>
+                            <li>Cost for hybrid app:
+                                <a target="_blank" rel="noopener noreferrer" href="https://www.auxanoglobalservices.com/cost-to-develop-cross-platform-app">
+                                    $20K - $75K
+                                </a>
+                            </li>
+                            <li>all 3 frameworks has no clear winner because of these are: open source, offering ready-to-use widgets,  have time-to-market is shorter, and lower development cycle costs.</li>
+                            <li>However, <span class="blackbold">React Native</span> is an obvious option among developers when it comes to developing cost-effective cross-platform apps.</li>
+                        </ul>
+                    </td>
+
+                </tr>
+                <tr>
                   <td class="blackbold">Application Examples</td>
                     <td><span class="blackbold">Facebook</span>, <span class="blackbold">Instagram</span>, SoundCloud, Bloomberg</td>
                     <td><span class="blackbold">Google Ads</span>, Tencent, Alibaba</td>
@@ -246,7 +278,7 @@
           <article class="container  mt-5">
              <h3> 💡 Conclusion(Pros and Cons):</h3>
               <hr>
-              <table class="table table-striped table-bordered">
+              <table class="table table-hover table-striped table-bordered">
                   <thead>
                     <tr>
                         <th scope="col" class="th1"></th>
