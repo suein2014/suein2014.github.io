@@ -9,10 +9,10 @@
 
 ## Show the homework page
 * [Show CIS-128 Homework1](https://suein2014.github.io/homework1.html)
-* [Show CIS-128 Homework2](https://suein2014.github.io/homework2.html)
-* [Show CIS-128 Homework3](https://suein2014.github.io/homework3.html)
-* [Show CIS-128 Homework4](https://suein2014.github.io/homework4.html)
-* [Show CIS-128 Homework5](https://suein2014.github.io/homework5.html)
+* [Show CIS-128 Homework2](https://suein2014.github.io/hw2/index.html)
+* [Show CIS-128 Homework3-si](https://suein2014.github.io/hw3/si.html)
+* [Show CIS-128 Homework3-bi](https://suein2014.github.io/hw3/bi.html)
+* [Show CIS-128 Homework4](https://suein2014.github.io/hw4/index.html)
 
 
 ## Dev env
