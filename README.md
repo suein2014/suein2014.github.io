@@ -9,6 +9,7 @@
 
 ## Show the homework page
 * [Show CIS-128 Homework1](https://suein2014.github.io/homework1.html)
+* [Show CIS-128 Homework1a](https://suein2014.github.io/homework1a.html)
 * [Show CIS-128 Homework2](https://suein2014.github.io/hw2/index.html)
 * [Show CIS-128 Homework3-si](https://suein2014.github.io/hw3/si.html)
 * [Show CIS-128 Homework3-bi](https://suein2014.github.io/hw3/bi.html)
