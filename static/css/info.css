@@ -89,7 +89,7 @@ h2 span{
     font-weight:bold;
 }
 
-.tech h2, .resources h2 {
+.hw h2, .tech h2, .resources h2 {
     text-align: center;
 }
 
