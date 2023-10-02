@@ -8,12 +8,13 @@
 
 
 ## Show the homework page
-* [Show CIS-128 Homework1](https://suein2014.github.io/homework1.html)
-* [Show CIS-128 Homework1a](https://suein2014.github.io/homework1a.html)
-* [Show CIS-128 Homework2](https://suein2014.github.io/hw2/index.html)
-* [Show CIS-128 Homework3-si](https://suein2014.github.io/hw3/si.html)
-* [Show CIS-128 Homework3-bi](https://suein2014.github.io/hw3/bi.html)
-* [Show CIS-128 Homework4](https://suein2014.github.io/hw4/index.html)
+* [Homework1: My Introduction](https://suein2014.github.io/homework1.html)
+* [Homework1a: Add animation to My introduction](https://suein2014.github.io/homework1a.html)
+* [Homework2: News Page](https://suein2014.github.io/hw2/index.html)
+* [Homework3: Toys Website by Semantic-UI](https://suein2014.github.io/hw3/si.html)
+* [homework3: Toys Website by Bootstrap](https://suein2014.github.io/hw3/bi.html)
+* [homework4: PWA characteristics](https://suein2014.github.io/hw4/index.html)
+* [Short Task: 3 Cross-Platform Solutions Comparison](https://suein2014.github.io/st/index.html)
 
 
 ## Dev env
